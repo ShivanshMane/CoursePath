@@ -1,0 +1,265 @@
+{
+  "majors": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "type": "major",
+      "department": "Computer Science",
+      "credits": 32,
+      "description": "A comprehensive program covering programming, algorithms, data structures, and software engineering.",
+      "requirements": [
+        {
+          "category": "Core Courses",
+          "courses": [
+            "COMP 130",
+            "COMP 163",
+            "COMP 164",
+            "COMP 270",
+            "COMP 271",
+            "COMP 272",
+            "COMP 330",
+            "COMP 331"
+          ]
+        },
+        {
+          "category": "Electives",
+          "credits": 12,
+          "description": "Choose 12 credits from COMP 300+ level courses"
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "type": "major",
+      "department": "Mathematics",
+      "credits": 32,
+      "description": "Study of mathematical concepts, proofs, and applications across various mathematical disciplines.",
+      "requirements": [
+        {
+          "category": "Core Courses",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 251",
+            "MATH 252",
+            "MATH 301",
+            "MATH 302"
+          ]
+        },
+        {
+          "category": "Advanced Courses",
+          "credits": 16,
+          "description": "Choose from MATH 300+ level courses"
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "type": "major",
+      "department": "Economics",
+      "credits": 28,
+      "description": "Analysis of economic systems, markets, and policy implications.",
+      "requirements": [
+        {
+          "category": "Core Courses",
+          "courses": [
+            "ECON 100",
+            "ECON 200",
+            "ECON 300",
+            "ECON 301"
+          ]
+        },
+        {
+          "category": "Electives",
+          "credits": 16,
+          "description": "Choose from ECON 200+ level courses"
+        }
+      ]
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "type": "major",
+      "department": "Biology",
+      "credits": 32,
+      "description": "Comprehensive study of living organisms and biological processes.",
+      "requirements": [
+        {
+          "category": "Core Courses",
+          "courses": [
+            "BIOL 141",
+            "BIOL 142",
+            "BIOL 241",
+            "BIOL 242",
+            "BIOL 301",
+            "BIOL 302"
+          ]
+        },
+        {
+          "category": "Laboratory Courses",
+          "credits": 8,
+          "description": "Choose from approved laboratory courses"
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "type": "major",
+      "department": "English",
+      "credits": 28,
+      "description": "Study of literature, writing, and critical analysis.",
+      "requirements": [
+        {
+          "category": "Core Courses",
+          "courses": [
+            "ENGL 150",
+            "ENGL 200",
+            "ENGL 250"
+          ]
+        },
+        {
+          "category": "Literature Courses",
+          "credits": 16,
+          "description": "Choose from ENGL 200+ level literature courses"
+        }
+      ]
+    }
+  ],
+  "minors": [
+    {
+      "id": "computer-science-minor",
+      "name": "Computer Science",
+      "type": "minor",
+      "department": "Computer Science",
+      "credits": 16,
+      "description": "Introduction to computer science concepts and programming.",
+      "requirements": [
+        {
+          "category": "Required Courses",
+          "courses": [
+            "COMP 130",
+            "COMP 163",
+            "COMP 164"
+          ]
+        },
+        {
+          "category": "Electives",
+          "credits": 4,
+          "description": "Choose one COMP 200+ level course"
+        }
+      ]
+    },
+    {
+      "id": "mathematics-minor",
+      "name": "Mathematics",
+      "type": "minor",
+      "department": "Mathematics",
+      "credits": 16,
+      "description": "Foundation in mathematical reasoning and problem-solving.",
+      "requirements": [
+        {
+          "category": "Required Courses",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 251"
+          ]
+        },
+        {
+          "category": "Electives",
+          "credits": 4,
+          "description": "Choose one MATH 200+ level course"
+        }
+      ]
+    },
+    {
+      "id": "business-minor",
+      "name": "Business",
+      "type": "minor",
+      "department": "Economics and Management",
+      "credits": 16,
+      "description": "Introduction to business principles and practices.",
+      "requirements": [
+        {
+          "category": "Required Courses",
+          "courses": [
+            "ECON 100",
+            "MGMT 200",
+            "MGMT 201"
+          ]
+        },
+        {
+          "category": "Electives",
+          "credits": 4,
+          "description": "Choose one MGMT 200+ level course"
+        }
+      ]
+    }
+  ],
+  "generalEducation": {
+    "id": "general-education",
+    "name": "General Education Requirements",
+    "type": "general",
+    "description": "Core curriculum requirements for all DePauw students.",
+    "totalCredits": 48,
+    "requirements": [
+      {
+        "category": "First-Year Seminar",
+        "credits": 4,
+        "description": "Required first-year experience course",
+        "courses": ["FYSE 101", "FYSE 102", "FYSE 103"]
+      },
+      {
+        "category": "Writing",
+        "credits": 4,
+        "description": "Composition and rhetoric course",
+        "courses": ["WRIT 101", "WRIT 102"]
+      },
+      {
+        "category": "Quantitative Reasoning",
+        "credits": 4,
+        "description": "Mathematics or statistics course",
+        "courses": ["MATH 130", "MATH 151", "STAT 120"]
+      },
+      {
+        "category": "Natural Science",
+        "credits": 8,
+        "description": "Two courses in natural sciences",
+        "courses": ["BIOL 141", "CHEM 131", "PHYS 141", "GEOL 101"]
+      },
+      {
+        "category": "Social Science",
+        "credits": 8,
+        "description": "Two courses in social sciences",
+        "courses": ["ECON 100", "PSYC 100", "SOCI 100", "POLS 100"]
+      },
+      {
+        "category": "Arts and Humanities",
+        "credits": 8,
+        "description": "Two courses in arts and humanities",
+        "courses": ["ENGL 150", "HIST 100", "ART 101", "MUS 101"]
+      },
+      {
+        "category": "Global Perspectives",
+        "credits": 4,
+        "description": "Course with international focus",
+        "courses": ["HIST 200", "POLS 200", "LANG 200"]
+      },
+      {
+        "category": "Values and Ethics",
+        "credits": 4,
+        "description": "Course exploring ethical reasoning",
+        "courses": ["PHIL 100", "REL 100", "ENVS 200"]
+      },
+      {
+        "category": "Physical Education",
+        "credits": 4,
+        "description": "Two semesters of physical education",
+        "courses": ["PE 101", "PE 102"]
+      }
+    ]
+  }
+}
