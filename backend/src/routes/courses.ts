@@ -2,6 +2,20 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 
+// Helper function to get last updated timestamp
+function getLastUpdated(): string | null {
+  try {
+    const combinedPath = path.join(__dirname, '../data/scraped-data.json');
+    if (fs.existsSync(combinedPath)) {
+      const data = JSON.parse(fs.readFileSync(combinedPath, 'utf-8'));
+      return data.lastUpdated || null;
+    }
+    return null;
+  } catch (error) {
+    return null;
+  }
+}
+
 const router = express.Router();
 
 // Load courses data
@@ -26,32 +40,19 @@ router.get('/', (req, res) => {
 
     let filteredCourses = [...coursesData.courses];
 
-    // Filter by department
+    // Filter by department (course code prefix)
     if (department) {
       filteredCourses = filteredCourses.filter((course: any) => 
-        course.department.toLowerCase().includes(department.toString().toLowerCase())
+        course.code.startsWith(department.toString())
       );
     }
 
-    // Filter by level
+    // Filter by level (first digit of course number)
     if (level) {
-      filteredCourses = filteredCourses.filter((course: any) => 
-        course.level === level.toString()
-      );
-    }
-
-    // Filter by typical term
-    if (term) {
-      filteredCourses = filteredCourses.filter((course: any) => 
-        course.typicalTerms.includes(term.toString())
-      );
-    }
-
-    // Filter by general education category
-    if (genEd) {
-      filteredCourses = filteredCourses.filter((course: any) => 
-        course.genEdCategories.includes(genEd.toString())
-      );
+      filteredCourses = filteredCourses.filter((course: any) => {
+        const courseNumber = course.code.split(' ')[1];
+        return courseNumber && courseNumber.startsWith(level.toString());
+      });
     }
 
     // Search in title, code, or description
@@ -78,6 +79,7 @@ router.get('/', (req, res) => {
         offset: offsetNum,
         hasMore: offsetNum + limitNum < filteredCourses.length
       },
+      lastUpdated: getLastUpdated(),
       message: 'Courses retrieved successfully'
     });
   } catch (error) {
@@ -133,14 +135,14 @@ router.get('/department/:department', (req, res) => {
   try {
     const { department } = req.params;
     
-    const departmentCourses = coursesData.courses.filter((course: any) => 
-      course.department.toLowerCase() === department.toLowerCase()
-    );
+    // Department field doesn't exist in current data structure
+    // Return empty array for now
+    const departmentCourses: any[] = [];
     
     res.json({
       success: true,
       data: departmentCourses,
-      message: `Courses in ${department} department retrieved successfully`
+      message: `Department filtering not available in current data structure`
     });
   } catch (error) {
     console.error('Error fetching department courses:', error);

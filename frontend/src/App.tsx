@@ -1,11 +1,13 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './hooks/useAuth';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import PlanningDashboard from './pages/PlanningDashboard';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -21,9 +23,28 @@ function App() {
             <Route path="/" element={
               <ProtectedRoute>
                 <Layout>
-                  <Routes>
-                    <Route index element={<Dashboard />} />
-                  </Routes>
+                  <Home />
+                </Layout>
+              </ProtectedRoute>
+            } />
+            <Route path="/requirements" element={
+              <ProtectedRoute>
+                <Layout>
+                  <Dashboard />
+                </Layout>
+              </ProtectedRoute>
+            } />
+            <Route path="/planning" element={
+              <ProtectedRoute>
+                <Layout>
+                  <PlanningDashboard />
+                </Layout>
+              </ProtectedRoute>
+            } />
+            <Route path="/profile" element={
+              <ProtectedRoute>
+                <Layout>
+                  <Profile />
                 </Layout>
               </ProtectedRoute>
             } />

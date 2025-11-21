@@ -2,6 +2,20 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 
+// Helper function to get last updated timestamp
+function getLastUpdated(): string | null {
+  try {
+    const combinedPath = path.join(__dirname, '../data/scraped-data.json');
+    if (fs.existsSync(combinedPath)) {
+      const data = JSON.parse(fs.readFileSync(combinedPath, 'utf-8'));
+      return data.lastUpdated || null;
+    }
+    return null;
+  } catch (error) {
+    return null;
+  }
+}
+
 const router = express.Router();
 
 // Load programs data
@@ -14,9 +28,17 @@ const programsData = JSON.parse(fs.readFileSync(programsPath, 'utf-8'));
  */
 router.get('/', (req, res) => {
   try {
+    // Combine majors, minors, and general education into a single array
+    const allPrograms = [
+      ...(programsData.majors || []),
+      ...(programsData.minors || []),
+      ...(programsData.generalEducation ? [programsData.generalEducation] : [])
+    ];
+    
     res.json({
       success: true,
-      data: programsData,
+      data: allPrograms,
+      lastUpdated: getLastUpdated(),
       message: 'Programs retrieved successfully'
     });
   } catch (error) {
@@ -38,6 +60,7 @@ router.get('/majors', (req, res) => {
     res.json({
       success: true,
       data: programsData.majors,
+      lastUpdated: getLastUpdated(),
       message: 'Majors retrieved successfully'
     });
   } catch (error) {
@@ -59,6 +82,7 @@ router.get('/minors', (req, res) => {
     res.json({
       success: true,
       data: programsData.minors,
+      lastUpdated: getLastUpdated(),
       message: 'Minors retrieved successfully'
     });
   } catch (error) {
@@ -79,7 +103,8 @@ router.get('/general-education', (req, res) => {
   try {
     res.json({
       success: true,
-      data: programsData.generalEducation,
+      data: programsData.generalEducation ? [programsData.generalEducation] : [],
+      lastUpdated: getLastUpdated(),
       message: 'General education requirements retrieved successfully'
     });
   } catch (error) {

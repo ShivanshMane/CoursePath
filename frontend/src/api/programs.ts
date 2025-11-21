@@ -3,11 +3,15 @@ import api from './client';
 export interface Program {
   id: string;
   name: string;
-  type: 'major' | 'minor' | 'general';
-  department: string;
-  credits: number;
-  description: string;
-  requirements: ProgramRequirement[];
+  type: 'Major' | 'Minor' | 'general';
+  totalCredits: number;
+  requirementGroups: ProgramRequirementGroup[];
+}
+
+export interface ProgramRequirementGroup {
+  name: string;
+  type: 'all' | 'any';
+  courses: string[];
 }
 
 export interface ProgramRequirement {
@@ -27,14 +31,13 @@ export interface GeneralEducation {
 }
 
 export interface ProgramsResponse {
-  majors: Program[];
-  minors: Program[];
-  generalEducation: GeneralEducation;
+  success: boolean;
+  data: Program[];
 }
 
 export const programsApi = {
   // Get all programs (majors, minors, and general education)
-  getAll: async (): Promise<ProgramsResponse> => {
+  getAll: async (): Promise<Program[]> => {
     const response = await api.get('/programs');
     return response.data.data;
   },
@@ -52,9 +55,9 @@ export const programsApi = {
   },
 
   // Get general education requirements
-  getGeneralEducation: async (): Promise<GeneralEducation> => {
+  getGeneralEducation: async (): Promise<GeneralEducation | null> => {
     const response = await api.get('/programs/general-education');
-    return response.data.data;
+    return response.data.data.length > 0 ? response.data.data[0] : null;
   },
 
   // Get a specific program by ID

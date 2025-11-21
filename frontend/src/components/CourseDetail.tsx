@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { coursesApi, Course } from '../api/courses';
-import { BookOpen, Clock, Users, Calendar, ArrowLeft, ExternalLink } from 'lucide-react';
+import { BookOpen, Users, Calendar, ArrowLeft, ExternalLink } from 'lucide-react';
 
 interface CourseDetailProps {
   courseCode: string;
@@ -25,10 +25,37 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
       setLoading(true);
       setError(null);
       
-      const [courseData, dependentData] = await Promise.all([
-        coursesApi.getByCode(courseCode),
-        coursesApi.getDependentCourses(courseCode)
-      ]);
+      // Try to get course details
+      let courseData: Course;
+      let dependentData: Course[] = [];
+      
+      try {
+        courseData = await coursesApi.getByCode(courseCode);
+      } catch (courseErr) {
+        console.error('Error loading course:', courseErr);
+        // If individual course fails, try to get it from the full list
+        try {
+          const allCourses = await coursesApi.getAll({ limit: 5000 });
+          const foundCourse = allCourses.courses.find(c => c.code === courseCode);
+          if (foundCourse) {
+            courseData = foundCourse;
+          } else {
+            throw new Error('Course not found');
+          }
+        } catch (fallbackErr) {
+          console.error('Error in fallback:', fallbackErr);
+          throw new Error('Course not found');
+        }
+      }
+      
+      // Try to get dependent courses (optional)
+      try {
+        dependentData = await coursesApi.getDependentCourses(courseCode);
+      } catch (depErr) {
+        console.warn('Could not load dependent courses:', depErr);
+        // Don't fail the whole request if dependent courses fail
+        dependentData = [];
+      }
       
       setCourse(courseData);
       setDependentCourses(dependentData);
@@ -40,61 +67,35 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
     }
   };
 
-  const getPrerequisitesText = (prerequisites: string[]) => {
-    if (prerequisites.length === 0) {
-      return 'None';
-    }
-    return prerequisites.join(', ');
-  };
 
-  const getCorequisitesText = (corequisites: string[]) => {
-    if (corequisites.length === 0) {
-      return 'None';
-    }
-    return corequisites.join(', ');
-  };
-
-  const getTermsText = (terms: string[]) => {
-    if (terms.length === 0) {
-      return 'Not specified';
-    }
-    return terms.join(', ');
-  };
-
-  const getGenEdCategoriesText = (categories: string[]) => {
-    if (categories.length === 0) {
-      return 'None';
-    }
-    return categories.join(', ');
-  };
 
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden">
+      <div className="bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden">
         {/* Header */}
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-gray-200 dark:border-gray-700">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <button
                 onClick={onClose}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
               >
-                <ArrowLeft className="w-5 h-5 text-gray-600" />
+                <ArrowLeft className="w-5 h-5 text-gray-600 dark:text-gray-400" />
               </button>
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                   {loading ? 'Loading...' : course?.code || courseCode}
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   {loading ? 'Please wait...' : course?.title || ''}
                 </p>
               </div>
             </div>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
+              className="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -131,7 +132,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Credits</p>
-                      <p className="text-lg font-semibold text-gray-900">{course.credits}</p>
+                      <p className="text-lg font-semibold text-gray-900">{course.credits || 1}</p>
                     </div>
                   </div>
                 </div>
@@ -139,11 +140,11 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
                 <div className="card">
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-lg">
-                      <Users className="w-5 h-5 text-blue-600" />
+                      <Calendar className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">Department</p>
-                      <p className="text-lg font-semibold text-gray-900">{course.department}</p>
+                      <p className="text-sm text-gray-500">Terms Offered</p>
+                      <p className="text-lg font-semibold text-gray-900">{course.termOffered || 'Fall, Spring'}</p>
                     </div>
                   </div>
                 </div>
@@ -151,11 +152,11 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
                 <div className="card">
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center justify-center w-10 h-10 bg-green-100 rounded-lg">
-                      <Calendar className="w-5 h-5 text-green-600" />
+                      <Users className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">Level</p>
-                      <p className="text-lg font-semibold text-gray-900">{course.level}00</p>
+                      <p className="text-sm text-gray-500">Prerequisites</p>
+                      <p className="text-lg font-semibold text-gray-900">{course.prerequisites?.length || 0}</p>
                     </div>
                   </div>
                 </div>
@@ -164,57 +165,30 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseCode, isOpen, onClose
               {/* Description */}
               <div className="card">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Description</h3>
-                <p className="text-gray-700 leading-relaxed">{course.description}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {course.description || 'No description available for this course.'}
+                </p>
               </div>
 
-              {/* Course Details */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Prerequisites */}
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Prerequisites</h3>
-                  <p className="text-gray-700">
-                    {getPrerequisitesText(course.prerequisites)}
-                  </p>
-                </div>
-
-                {/* Corequisites */}
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Corequisites</h3>
-                  <p className="text-gray-700">
-                    {getCorequisitesText(course.corequisites)}
-                  </p>
-                </div>
-
-                {/* Typical Terms */}
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Typical Terms</h3>
-                  <p className="text-gray-700">
-                    {getTermsText(course.typicalTerms)}
-                  </p>
-                </div>
-
-                {/* General Education Categories */}
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Gen Ed Categories</h3>
-                  <p className="text-gray-700">
-                    {getGenEdCategoriesText(course.genEdCategories)}
-                  </p>
-                </div>
-              </div>
-
-              {/* Status */}
+              {/* Prerequisites */}
               <div className="card">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Course Status</h3>
-                <div className="flex items-center space-x-2">
-                  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                    course.offered 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-red-100 text-red-800'
-                  }`}>
-                    {course.offered ? 'Currently Offered' : 'Not Currently Offered'}
-                  </span>
-                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Prerequisites</h3>
+                {course.prerequisites && course.prerequisites.length > 0 ? (
+                  <div className="flex flex-wrap gap-2">
+                    {course.prerequisites.map((prereq, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
+                      >
+                        {prereq}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-500 italic">No prerequisites required</p>
+                )}
               </div>
+
 
               {/* Dependent Courses */}
               {dependentCourses.length > 0 && (

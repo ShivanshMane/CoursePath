@@ -1,264 +1,4131 @@
 {
   "majors": [
     {
-      "id": "computer-science",
-      "name": "Computer Science",
-      "type": "major",
-      "department": "Computer Science",
-      "credits": 32,
-      "description": "A comprehensive program covering programming, algorithms, data structures, and software engineering.",
-      "requirements": [
+      "id": "accounting-finance-major",
+      "name": "Accounting and Finance for Decision Making",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
         {
-          "category": "Core Courses",
-          "courses": [
-            "COMP 130",
-            "COMP 163",
-            "COMP 164",
-            "COMP 270",
-            "COMP 271",
-            "COMP 272",
-            "COMP 330",
-            "COMP 331"
-          ]
-        },
-        {
-          "category": "Electives",
-          "credits": 12,
-          "description": "Choose 12 credits from COMP 300+ level courses"
-        }
-      ]
-    },
-    {
-      "id": "mathematics",
-      "name": "Mathematics",
-      "type": "major",
-      "department": "Mathematics",
-      "credits": 32,
-      "description": "Study of mathematical concepts, proofs, and applications across various mathematical disciplines.",
-      "requirements": [
-        {
-          "category": "Core Courses",
-          "courses": [
-            "MATH 151",
-            "MATH 152",
-            "MATH 251",
-            "MATH 252",
-            "MATH 301",
-            "MATH 302"
-          ]
-        },
-        {
-          "category": "Advanced Courses",
-          "credits": 16,
-          "description": "Choose from MATH 300+ level courses"
-        }
-      ]
-    },
-    {
-      "id": "economics",
-      "name": "Economics",
-      "type": "major",
-      "department": "Economics",
-      "credits": 28,
-      "description": "Analysis of economic systems, markets, and policy implications.",
-      "requirements": [
-        {
-          "category": "Core Courses",
+          "name": "Core Courses",
+          "type": "all",
           "courses": [
             "ECON 100",
             "ECON 200",
-            "ECON 300",
-            "ECON 301"
+            "ECON 201",
+            "MATH 151",
+            "MATH 152"
           ]
-        },
-        {
-          "category": "Electives",
-          "credits": 16,
-          "description": "Choose from ECON 200+ level courses"
         }
       ]
     },
     {
-      "id": "biology",
-      "name": "Biology",
-      "type": "major",
-      "department": "Biology",
-      "credits": 32,
-      "description": "Comprehensive study of living organisms and biological processes.",
-      "requirements": [
+      "id": "actuarial-science-major",
+      "name": "Actuarial Science and Risk Management",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
         {
-          "category": "Core Courses",
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 253",
+            "MATH 331",
+            "MATH 332"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "africana-studies-major",
+      "name": "Africana Studies",
+      "type": "Major",
+      "totalCredits": 52,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Africana Studies",
+          "type": "all",
+          "courses": [
+            "BLST 100",
+            "BLST 240",
+            "BLST 281",
+            "BLST 480",
+            "ANTH 271",
+            "ANTH 352",
+            "EDUC 300",
+            "ENG 263",
+            "HIST 105",
+            "HIST 109",
+            "HIST 110",
+            "HIST 256",
+            "HIST 257",
+            "HIST 275",
+            "HIST 355",
+            "HIST 356",
+            "HIST 367",
+            "POLS 320",
+            "POLS 323",
+            "POLS 352",
+            "REL 269",
+            "SOC 237",
+            "SOC 322",
+            "SOC 329"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BLST 100",
+            "BLST 240",
+            "BLST 281",
+            "BLST 480"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 271",
+            "ANTH 352",
+            "EDUC 300",
+            "ENG 263",
+            "HIST 105",
+            "HIST 109",
+            "HIST 110",
+            "HIST 256",
+            "HIST 257",
+            "HIST 275",
+            "HIST 355",
+            "HIST 356",
+            "HIST 367",
+            "POLS 320",
+            "POLS 323",
+            "POLS 352",
+            "REL 269",
+            "SOC 237",
+            "SOC 322",
+            "SOC 329"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "BLST 240",
+            "BLST 281"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Africana Studies",
+          "type": "all",
+          "courses": [
+            "BLST 100"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BLST 100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anthropology-major",
+      "name": "Anthropology",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Anthropology",
+          "type": "all",
+          "courses": [
+            "ANTH 151",
+            "ANTH 153",
+            "ANTH 383",
+            "ANTH 450",
+            "ANTH 380",
+            "ANTH 452"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 151",
+            "ANTH 153",
+            "ANTH 383",
+            "ANTH 450",
+            "ANTH 380",
+            "ANTH 452"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ANTH 452"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Anthropology",
+          "type": "all",
+          "courses": [
+            "ANTH 151",
+            "ANTH 153"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 151",
+            "ANTH 153"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-statistics-major",
+      "name": "Applied Statistics",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Minor Requirements for Applied Statistics",
+          "type": "all",
+          "courses": [
+            "MATH 141",
+            "MATH 151",
+            "MATH 341",
+            "ECON 350",
+            "BIO 275",
+            "PSY 214",
+            "MATH 247",
+            "MATH 261",
+            "MATH 340",
+            "MATH 348",
+            "MATH 441",
+            "MATH 423",
+            "ECON 450"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 141",
+            "MATH 151",
+            "MATH 341",
+            "ECON 350",
+            "BIO 275",
+            "PSY 214"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "MATH 247",
+            "MATH 261",
+            "MATH 340",
+            "MATH 348",
+            "MATH 441",
+            "MATH 423",
+            "ECON 450"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-history-major",
+      "name": "Art History",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Art History",
+          "type": "all",
+          "courses": [
+            "ARTH 494"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ARTH 494"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ARTH 494"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asian-studies-major",
+      "name": "Asian Studies",
+      "type": "Major",
+      "totalCredits": 122,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Asian Studies",
+          "type": "all",
+          "courses": [
+            "ARTH 133",
+            "ARTH 135",
+            "ARTH 234",
+            "ASIA 140",
+            "ASIA 150",
+            "ASIA 197",
+            "HIST 253",
+            "HIST 254",
+            "HIST 255",
+            "POLS 253",
+            "REL 130",
+            "REL 253",
+            "ASIA 480",
+            "CHIN 161",
+            "CHIN 162",
+            "CHIN 261",
+            "CHIN 262",
+            "CHIN 361",
+            "CHIN 362",
+            "JAPN 151",
+            "JAPN 152",
+            "JAPN 251",
+            "JAPN 252",
+            "JAPN 351",
+            "JAPN 352",
+            "ANTH 290",
+            "ARTH 231",
+            "ARTH 232",
+            "ARTH 233",
+            "ARTH 331",
+            "ARTH 332",
+            "ARTH 333",
+            "ARTH 334",
+            "ASIA 250",
+            "ASIA 281",
+            "ASIA 282",
+            "ASIA 290",
+            "ASIA 390",
+            "ASIA 470",
+            "ENG 265",
+            "ECON 330",
+            "HIST 252",
+            "HIST 290",
+            "HIST 351",
+            "HIST 353",
+            "HIST 490",
+            "HIST 491",
+            "JAPN 451",
+            "PHIL 210",
+            "REL 257",
+            "REL 258",
+            "REL 290",
+            "REL 357",
+            "REL 359",
+            "REL 491"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ARTH 133",
+            "ARTH 135",
+            "ARTH 234",
+            "ASIA 140",
+            "ASIA 150",
+            "ASIA 197",
+            "HIST 253",
+            "HIST 254",
+            "HIST 255",
+            "POLS 253",
+            "REL 130",
+            "REL 253",
+            "ASIA 480",
+            "CHIN 161",
+            "CHIN 162",
+            "CHIN 261",
+            "CHIN 262",
+            "CHIN 361",
+            "CHIN 362",
+            "JAPN 151",
+            "JAPN 152",
+            "JAPN 251",
+            "JAPN 252",
+            "JAPN 351",
+            "JAPN 352"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 290",
+            "ARTH 231",
+            "ARTH 232",
+            "ARTH 233",
+            "ARTH 234",
+            "ARTH 331",
+            "ARTH 332",
+            "ARTH 333",
+            "ARTH 334",
+            "ASIA 250",
+            "ASIA 281",
+            "ASIA 282",
+            "ASIA 290",
+            "ASIA 390",
+            "ASIA 470",
+            "CHIN 261",
+            "CHIN 262",
+            "CHIN 361",
+            "CHIN 362",
+            "ENG 265",
+            "ECON 330",
+            "HIST 252",
+            "HIST 290",
+            "HIST 351",
+            "HIST 353",
+            "HIST 490",
+            "HIST 491",
+            "JAPN 251",
+            "JAPN 252",
+            "JAPN 351",
+            "JAPN 352",
+            "JAPN 451",
+            "PHIL 210",
+            "POLS 253",
+            "REL 253",
+            "REL 257",
+            "REL 258",
+            "REL 290",
+            "REL 357",
+            "REL 359",
+            "REL 491"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ASIA 480"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astronomy-major",
+      "name": "Astronomy",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Minor Requirements for Astronomy",
+          "type": "all",
+          "courses": [
+            "PHYS 104",
+            "PHYS 320",
+            "PHYS 300",
+            "PHYS 310",
+            "PHYS 103",
+            "PHYS 203",
+            "PHYS 330"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 104",
+            "PHYS 320",
+            "PHYS 300",
+            "PHYS 310"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 103",
+            "PHYS 104",
+            "PHYS 203",
+            "PHYS 310",
+            "PHYS 320",
+            "PHYS 330",
+            "PHYS 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-major",
+      "name": "Biochemistry",
+      "type": "Major",
+      "totalCredits": 72,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Biochemistry",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "CHEM 130",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260",
+            "CHEM 320",
+            "CHEM 343",
+            "CHEM 440",
+            "CHEM 342",
+            "BIO 250",
+            "BIO 314",
+            "BIO 320",
+            "BIO 325",
+            "BIO 335",
+            "BIO 361",
+            "BIO 382",
+            "BIO 415",
+            "CHEM 490",
+            "CHEM 405",
+            "CHEM 335",
+            "CHEM 354",
+            "CHEM 364",
+            "BIO 390",
+            "BIO 490",
+            "CHEM 395"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "CHEM 130",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260",
+            "CHEM 320",
+            "CHEM 343",
+            "CHEM 440"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 342",
+            "BIO 250",
+            "BIO 314",
+            "BIO 320",
+            "BIO 325",
+            "BIO 335",
+            "BIO 361",
+            "BIO 382",
+            "BIO 415"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "CHEM 490",
+            "CHEM 405"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Biochemistry",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260",
+            "CHEM 310",
+            "CHEM 343",
+            "CHEM 440",
+            "BIO 314",
+            "BIO 315",
+            "BIO 320",
+            "BIO 325",
+            "BIO 335",
+            "BIO 361",
+            "BIO 415"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 310",
+            "CHEM 343",
+            "CHEM 440",
+            "BIO 314",
+            "BIO 315",
+            "BIO 320",
+            "BIO 325",
+            "BIO 335",
+            "BIO 361",
+            "BIO 415"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-major",
+      "name": "Biology",
+      "type": "Major",
+      "totalCredits": 64,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Biology",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "BIO 101",
+            "BIO 102",
+            "BIO 450",
+            "BIO 241",
+            "BIO 250",
+            "BIO 314",
+            "BIO 315",
+            "BIO 325",
+            "BIO 361",
+            "BIO 381",
+            "BIO 230",
+            "BIO 234",
+            "BIO 235",
+            "BIO 285",
+            "BIO 334",
+            "BIO 335",
+            "BIO 342",
+            "BIO 343",
+            "BIO 344",
+            "BIO 345",
+            "BIO 346",
+            "BIO 348",
+            "CHEM 240",
+            "CHEM 260",
+            "CSC 121",
+            "GEOS 110",
+            "PHYS 120"
+          ]
+        },
+        {
+          "name": "Total Courses Required",
+          "type": "all",
+          "courses": [
+            "CHEM 120"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BIO 101",
+            "BIO 102",
+            "BIO 450"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "BIO 241",
+            "BIO 250",
+            "BIO 314",
+            "BIO 315",
+            "BIO 325",
+            "BIO 361",
+            "BIO 381",
+            "BIO 230",
+            "BIO 234",
+            "BIO 235",
+            "BIO 285",
+            "BIO 334",
+            "BIO 335",
+            "BIO 342",
+            "BIO 343",
+            "BIO 344",
+            "BIO 345",
+            "BIO 346",
+            "BIO 348",
+            "CHEM 240",
+            "CHEM 260",
+            "CSC 121",
+            "GEOS 110",
+            "PHYS 120"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "BIO 450"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Biology",
+          "type": "all",
+          "courses": [
+            "BIO 101",
+            "BIO 102",
+            "CHEM 120"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BIO 101",
+            "BIO 102"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 120"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-administration-major",
+      "name": "Business Administration",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BUSA 100",
+            "BUSA 200",
+            "BUSA 300",
+            "ECON 100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-analytics-major",
+      "name": "Business Analytics",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BUSA 100",
+            "BUSA 200",
+            "MATH 331",
+            "MATH 332"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cellular-molecular-biology-major",
+      "name": "Cellular and Molecular Biology",
+      "type": "Major",
+      "totalCredits": 48,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
           "courses": [
             "BIOL 141",
             "BIOL 142",
-            "BIOL 241",
-            "BIOL 242",
-            "BIOL 301",
-            "BIOL 302"
+            "BIOL 250",
+            "BIOL 340",
+            "CHEM 131",
+            "CHEM 132"
           ]
-        },
-        {
-          "category": "Laboratory Courses",
-          "credits": 8,
-          "description": "Choose from approved laboratory courses"
         }
       ]
     },
     {
-      "id": "english",
-      "name": "English",
-      "type": "major",
-      "department": "English",
-      "credits": 28,
-      "description": "Study of literature, writing, and critical analysis.",
-      "requirements": [
+      "id": "chemistry-major",
+      "name": "Chemistry",
+      "type": "Major",
+      "totalCredits": 44,
+      "requirementGroups": [
         {
-          "category": "Core Courses",
+          "name": "Major Requirements for Chemistry",
+          "type": "all",
           "courses": [
-            "ENGL 150",
-            "ENGL 200",
-            "ENGL 250"
+            "CHEM 120",
+            "CHEM 130",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260",
+            "CHEM 320",
+            "CHEM 331",
+            "CHEM 332",
+            "CHEM 335",
+            "CHEM 450",
+            "CHEM 351",
+            "CHEM 352",
+            "CHEM 353",
+            "CHEM 354",
+            "CHEM 460",
+            "CHEM 361",
+            "CHEM 362",
+            "CHEM 363",
+            "CHEM 364",
+            "CHEM 490",
+            "CHEM 405"
           ]
         },
         {
-          "category": "Literature Courses",
-          "credits": 16,
-          "description": "Choose from ENGL 200+ level literature courses"
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 120",
+            "CHEM 130",
+            "CHEM 170",
+            "CHEM 240",
+            "CHEM 260"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 320",
+            "CHEM 331",
+            "CHEM 332",
+            "CHEM 335",
+            "CHEM 450",
+            "CHEM 351",
+            "CHEM 352",
+            "CHEM 353",
+            "CHEM 354",
+            "CHEM 460",
+            "CHEM 361",
+            "CHEM 362",
+            "CHEM 363",
+            "CHEM 364"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "CHEM 490",
+            "CHEM 405"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Chemistry",
+          "type": "all",
+          "courses": [
+            "CHEM 170"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 170"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chinese-studies-major",
+      "name": "Chinese Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CHIN 100",
+            "CHIN 200",
+            "CHIN 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classical-civilization-major",
+      "name": "Classical Civilization",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CLST 100",
+            "CLST 200",
+            "CLST 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication-major",
+      "name": "Communication",
+      "type": "Major",
+      "totalCredits": 83,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Communication",
+          "type": "all",
+          "courses": [
+            "COMM 200",
+            "COMM 215",
+            "COMM 233",
+            "COMM 223",
+            "COMM 225",
+            "COMM 111",
+            "COMM 117",
+            "COMM 210",
+            "COMM 211",
+            "COMM 213",
+            "COMM 214",
+            "COMM 311",
+            "COMM 314",
+            "COMM 315",
+            "COMM 235",
+            "COMM 237",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 227",
+            "COMM 322",
+            "COMM 323",
+            "COMM 325",
+            "COMM 326",
+            "COMM 327",
+            "COMM 328",
+            "COMM 350"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "COMM 200",
+            "COMM 215",
+            "COMM 233",
+            "COMM 223",
+            "COMM 225"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "COMM 111",
+            "COMM 117",
+            "COMM 210",
+            "COMM 211",
+            "COMM 213",
+            "COMM 214",
+            "COMM 215",
+            "COMM 311",
+            "COMM 314",
+            "COMM 315",
+            "COMM 233",
+            "COMM 235",
+            "COMM 237",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 223",
+            "COMM 225",
+            "COMM 227",
+            "COMM 322",
+            "COMM 323",
+            "COMM 325",
+            "COMM 326",
+            "COMM 327",
+            "COMM 328"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "COMM 314",
+            "COMM 315",
+            "COMM 322",
+            "COMM 323",
+            "COMM 326",
+            "COMM 327",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 350"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "COMM 213",
+            "COMM 214",
+            "COMM 215",
+            "COMM 225",
+            "COMM 227",
+            "COMM 235",
+            "COMM 237",
+            "COMM 314",
+            "COMM 315",
+            "COMM 322",
+            "COMM 326",
+            "COMM 327",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 350"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computer-science-major",
+      "name": "Computer Science",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Computer Science",
+          "type": "all",
+          "courses": [
+            "MATH 123",
+            "CSC 121",
+            "CSC 125",
+            "CSC 231",
+            "CSC 235",
+            "CSC 236",
+            "CSC 498",
+            "CSC 398",
+            "MATH 223"
+          ]
+        },
+        {
+          "name": "Total Courses Required",
+          "type": "all",
+          "courses": [
+            "MATH 123"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CSC 121",
+            "CSC 125",
+            "CSC 231",
+            "CSC 235",
+            "CSC 236",
+            "CSC 498"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CSC 398",
+            "CSC 498"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "CSC 498"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "CSC 498"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Computer Science",
+          "type": "all",
+          "courses": [
+            "CSC 121",
+            "CSC 125",
+            "CSC 231",
+            "CSC 235",
+            "CSC 236"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "CSC 121",
+            "CSC 125"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "CSC 231",
+            "CSC 235",
+            "CSC 236"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative-writing-major",
+      "name": "Creative Writing",
+      "type": "Major",
+      "totalCredits": 53,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Creative Writing",
+          "type": "all",
+          "courses": [
+            "ENG 149",
+            "ENG 349",
+            "ENG 412",
+            "ENG 141",
+            "AFST 240",
+            "ENG 171"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ENG 149",
+            "ENG 349",
+            "ENG 412"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ENG 141",
+            "AFST 240",
+            "ENG 171"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ENG 412"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Creative Writing",
+          "type": "all",
+          "courses": [
+            "ENG 149",
+            "ENG 349",
+            "ENG 232",
+            "ENG 301",
+            "ENG 302",
+            "ENG 311",
+            "ENG 312",
+            "ENG 321",
+            "ENG 322",
+            "ENG 331",
+            "ENG 332",
+            "ENG 341",
+            "ENG 342",
+            "ENG 343"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ENG 149",
+            "ENG 349",
+            "ENG 232",
+            "ENG 301",
+            "ENG 302",
+            "ENG 311",
+            "ENG 312",
+            "ENG 321",
+            "ENG 322",
+            "ENG 331",
+            "ENG 332",
+            "ENG 341",
+            "ENG 342",
+            "ENG 343"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ENG 232",
+            "ENG 301",
+            "ENG 302",
+            "ENG 311",
+            "ENG 312",
+            "ENG 321",
+            "ENG 322",
+            "ENG 331",
+            "ENG 332",
+            "ENG 341",
+            "ENG 342",
+            "ENG 343"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-science-major",
+      "name": "Data Science",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Minor Requirements for Data Science",
+          "type": "all",
+          "courses": [
+            "MATH 141",
+            "PSY 214",
+            "ECON 350",
+            "BIO 375",
+            "MATH 261",
+            "CSC 370",
+            "MATH 341",
+            "ECON 385",
+            "ECON 450",
+            "CSC 121",
+            "CSC 125"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 141",
+            "PSY 214",
+            "ECON 350",
+            "BIO 375",
+            "MATH 261",
+            "CSC 370",
+            "MATH 341",
+            "ECON 385",
+            "ECON 450",
+            "CSC 121",
+            "CSC 125"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-studies-major",
+      "name": "Design Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ART 100",
+            "ART 200",
+            "ART 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earth-science-major",
+      "name": "Earth Science",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GEOL 100",
+            "GEOL 200",
+            "GEOL 300",
+            "PHYS 141"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-major",
+      "name": "Economics",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Economics",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 294",
+            "ECON 295",
+            "ECON 350",
+            "ECON 480",
+            "ECON 410",
+            "ECON 485"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 294",
+            "ECON 295",
+            "ECON 350",
+            "ECON 480"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ECON 410"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ECON 480",
+            "ECON 485"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "ECON 350",
+            "ECON 480"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Economics",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 294",
+            "ECON 295",
+            "ECON 140"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 294",
+            "ECON 295"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ECON 140"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education-studies-major",
+      "name": "Education Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "EDUC 100",
+            "EDUC 200",
+            "EDUC 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-literature-major",
+      "name": "English Literature",
+      "type": "Major",
+      "totalCredits": 36,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Literature",
+          "type": "all",
+          "courses": [
+            "ENG 141",
+            "ENG 251",
+            "ENG 451",
+            "ENG 263",
+            "ENG 264",
+            "ENG 265",
+            "ENG 266",
+            "ENG 281",
+            "ENG 282",
+            "ENG 283",
+            "AFST 240",
+            "ENG 171",
+            "ENG 268",
+            "ENG 269",
+            "ENG 398",
+            "ENG 255",
+            "ENG 351"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ENG 141",
+            "ENG 251",
+            "ENG 451"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ENG 263",
+            "ENG 264",
+            "ENG 265",
+            "ENG 266",
+            "ENG 281",
+            "ENG 282",
+            "ENG 283",
+            "AFST 240",
+            "ENG 171",
+            "ENG 268",
+            "ENG 269",
+            "ENG 398"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "ENG 451"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "ENG 251"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Literature",
+          "type": "all",
+          "courses": [
+            "ENG 197"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ENG 197"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environmental-biology-major",
+      "name": "Environmental Biology",
+      "type": "Major",
+      "totalCredits": 44,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BIOL 141",
+            "BIOL 142",
+            "ENVS 100",
+            "ENVS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environmental-geoscience-major",
+      "name": "Environmental Geoscience",
+      "type": "Major",
+      "totalCredits": 90,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Environmental Geoscience",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 280",
+            "GEOS 310",
+            "GEOS 350",
+            "GEOS 450",
+            "GEOS 125",
+            "GEOS 230",
+            "GEOS 117",
+            "GEOS 195",
+            "GEOS 205",
+            "GEOS 220",
+            "GEOS 315",
+            "GEOS 330",
+            "GEOS 370",
+            "GEOS 380",
+            "GEOS 470",
+            "GEOS 480",
+            "GEOS 490",
+            "ANTH 253",
+            "BIO 102",
+            "BIO 342",
+            "BIO 345",
+            "CHEM 120",
+            "CHEM 130",
+            "ECON 245",
+            "PHIL 232",
+            "POLS 265",
+            "UNIV 170",
+            "MATH 151",
+            "MATH 152",
+            "PHYS 120",
+            "PHYS 130",
+            "CSC 121",
+            "CSC 122",
+            "POLS 110"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 280",
+            "GEOS 310",
+            "GEOS 350",
+            "GEOS 450"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 125",
+            "GEOS 230",
+            "GEOS 117",
+            "GEOS 195",
+            "GEOS 205",
+            "GEOS 220",
+            "GEOS 315",
+            "GEOS 330",
+            "GEOS 370",
+            "GEOS 380",
+            "GEOS 470",
+            "GEOS 480",
+            "GEOS 490",
+            "ANTH 253",
+            "BIO 102",
+            "BIO 342",
+            "BIO 345",
+            "CHEM 120",
+            "CHEM 130",
+            "ECON 245",
+            "PHIL 232",
+            "POLS 265",
+            "UNIV 170"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "GEOS 450"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Environmental Geoscience",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 125",
+            "GEOS 230",
+            "ANTH 253",
+            "BIO 102",
+            "BIO 342",
+            "BIO 345",
+            "CHEM 120",
+            "CHEM 130",
+            "ECON 245",
+            "PHIL 232",
+            "POLS 265",
+            "UNIV 170"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 125",
+            "GEOS 230"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 253",
+            "BIO 102",
+            "BIO 342",
+            "BIO 345",
+            "CHEM 120",
+            "CHEM 130",
+            "ECON 245",
+            "PHIL 232",
+            "POLS 265",
+            "UNIV 170"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "film-media-arts-major",
+      "name": "Film and Media Arts",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "FILM 100",
+            "FILM 200",
+            "FILM 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-major",
+      "name": "Finance",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 200",
+            "MATH 151",
+            "MATH 152"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geology-major",
+      "name": "Geology",
+      "type": "Major",
+      "totalCredits": 51,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Geology",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 280",
+            "GEOS 310",
+            "GEOS 350",
+            "GEOS 450",
+            "GEOS 210",
+            "GEOS 320",
+            "CHEM 130",
+            "GEOS 105",
+            "GEOS 107",
+            "GEOS 205",
+            "GEOS 220",
+            "GEOS 230",
+            "GEOS 315",
+            "GEOS 330",
+            "GEOS 370",
+            "GEOS 380",
+            "GEOS 470",
+            "GEOS 480",
+            "GEOS 490",
+            "MATH 151",
+            "MATH 152",
+            "PHYS 120",
+            "PHYS 130",
+            "CSC 121",
+            "CSC 122",
+            "POLS 110",
+            "ANTH 253"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 110",
+            "GEOS 280",
+            "GEOS 310",
+            "GEOS 350",
+            "GEOS 450"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 210",
+            "GEOS 320",
+            "CHEM 130",
+            "GEOS 105",
+            "GEOS 107",
+            "GEOS 205",
+            "GEOS 220",
+            "GEOS 230",
+            "GEOS 315",
+            "GEOS 330",
+            "GEOS 370",
+            "GEOS 380",
+            "GEOS 470",
+            "GEOS 480",
+            "GEOS 490"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "GEOS 450"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Geology",
+          "type": "all",
+          "courses": [
+            "GEOS 110"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GEOS 110"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "german-major",
+      "name": "German",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for German",
+          "type": "all",
+          "courses": [
+            "GRMN 111",
+            "GRMN 211",
+            "GRMN 212",
+            "GRMN 304",
+            "GRMN 307",
+            "GRMN 415",
+            "GRMN 309"
+          ]
+        },
+        {
+          "name": "Total Courses Required",
+          "type": "all",
+          "courses": [
+            "GRMN 111"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GRMN 211",
+            "GRMN 212",
+            "GRMN 304",
+            "GRMN 307",
+            "GRMN 415"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "german-studies-major",
+      "name": "German Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "GERM 100",
+            "GERM 200",
+            "GERM 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global-french-studies-major",
+      "name": "Global French Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "FREN 100",
+            "FREN 200",
+            "FREN 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global-health-major",
+      "name": "Global Health",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "HLTH 100",
+            "HLTH 200",
+            "HLTH 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hispanic-studies-major",
+      "name": "Hispanic Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "SPAN 100",
+            "SPAN 200",
+            "SPAN 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-major",
+      "name": "History",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for History",
+          "type": "all",
+          "courses": [
+            "HIST 100",
+            "HIST 197",
+            "HIST 295",
+            "HIST 490",
+            "HIST 495",
+            "HIST 496"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "HIST 100",
+            "HIST 197",
+            "HIST 295",
+            "HIST 490",
+            "HIST 495",
+            "HIST 496"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "HIST 490",
+            "HIST 495",
+            "HIST 295"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "HIST 490",
+            "HIST 495"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "HIST 295"
+          ]
+        },
+        {
+          "name": "Minor Requirements for History",
+          "type": "all",
+          "courses": [
+            "HIST 295"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "HIST 295"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "independent-interdisciplinary-major",
+      "name": "Independent Interdisciplinary",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "INTD 100",
+            "INTD 200",
+            "INTD 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "italian-cultural-studies-major",
+      "name": "Italian Cultural Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ITAL 100",
+            "ITAL 200",
+            "ITAL 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japanese-studies-major",
+      "name": "Japanese Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "JAPN 100",
+            "JAPN 200",
+            "JAPN 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinesiology-major",
+      "name": "Kinesiology",
+      "type": "Major",
+      "totalCredits": 39,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Kinesiology",
+          "type": "all",
+          "courses": [
+            "KINS 100",
+            "KINS 255",
+            "KINS 256",
+            "KINS 309",
+            "KINS 353",
+            "KINS 450",
+            "KINS 230",
+            "KINS 260",
+            "KINS 350",
+            "KINS 354",
+            "KINS 410",
+            "MATH 141",
+            "MATH 247"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "KINS 100",
+            "KINS 255",
+            "KINS 256",
+            "KINS 309",
+            "KINS 353",
+            "KINS 450"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "KINS 230",
+            "KINS 260",
+            "KINS 350",
+            "KINS 354",
+            "KINS 410",
+            "MATH 141",
+            "MATH 247"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "KINS 450"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Kinesiology",
+          "type": "all",
+          "courses": [
+            "KINS 100",
+            "KINS 230",
+            "KINS 255",
+            "KINS 256",
+            "KINS 309",
+            "KINS 353"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "KINS 100",
+            "KINS 230",
+            "KINS 255",
+            "KINS 256",
+            "KINS 309",
+            "KINS 353"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin-major",
+      "name": "Latin",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "LATN 100",
+            "LATN 200",
+            "LATN 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin-american-caribbean-studies-major",
+      "name": "Latin American and Caribbean Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "LACS 100",
+            "LACS 200",
+            "LACS 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematics-major",
+      "name": "Mathematics",
+      "type": "Major",
+      "totalCredits": 33,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Mathematics",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 223",
+            "MATH 251",
+            "MATH 270",
+            "MATH 495",
+            "MATH 361",
+            "MATH 371",
+            "MATH 331",
+            "MATH 441",
+            "MATH 341",
+            "MATH 348"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 223",
+            "MATH 251",
+            "MATH 270",
+            "MATH 495"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "MATH 361",
+            "MATH 371",
+            "MATH 331",
+            "MATH 441",
+            "MATH 341",
+            "MATH 348"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "MATH 495"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Mathematics",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 223",
+            "MATH 270"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 223",
+            "MATH 270"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music-major",
+      "name": "Music",
+      "type": "Major",
+      "totalCredits": 54,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Music (Bachelor of Arts)",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 290",
+            "MUS 300",
+            "MUS 450",
+            "MUS 390",
+            "MUS 454"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 290",
+            "MUS 300",
+            "MUS 450"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "MUS 390"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "MUS 450",
+            "MUS 454"
+          ]
+        },
+        {
+          "name": "Major Requirements for Music (Bachelor of Musical Arts)",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 290",
+            "MUS 272",
+            "MUS 282",
+            "MUS 200",
+            "MUS 203",
+            "MUS 205",
+            "MUS 210",
+            "MUS 300",
+            "MUS 310",
+            "MUS 450",
+            "MUS 390",
+            "MUS 454"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 290",
+            "MUS 272",
+            "MUS 282",
+            "MUS 200",
+            "MUS 203",
+            "MUS 205",
+            "MUS 210",
+            "MUS 300",
+            "MUS 310",
+            "MUS 450",
+            "MUS 390"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "MUS 450",
+            "MUS 454"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Music",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 102",
+            "MUS 290",
+            "MUS 390"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MUS 140",
+            "MUS 141",
+            "MUS 102",
+            "MUS 290",
+            "MUS 390"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neuroscience-major",
+      "name": "Neuroscience",
+      "type": "Major",
+      "totalCredits": 105,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Neuroscience",
+          "type": "all",
+          "courses": [
+            "BIO 101",
+            "CHEM 120",
+            "CSC 121",
+            "PSY 100",
+            "PSY 214",
+            "MATH 141",
+            "BIO 382",
+            "PSY 300",
+            "PSY 301",
+            "NEUR 320",
+            "NEUR 341",
+            "BIO 203",
+            "BIO 241",
+            "BIO 320",
+            "BIO 325",
+            "BIO 314",
+            "BIO 315",
+            "BIO 335",
+            "BIO 381",
+            "BIO 385",
+            "BIO 415",
+            "CHEM 240",
+            "CHEM 343",
+            "CSC 233",
+            "CSC 320",
+            "CSC 330",
+            "CSC 360",
+            "KINS 254",
+            "KINS 350",
+            "KINS 410",
+            "NEUR 348",
+            "NEUR 349",
+            "PHIL 234",
+            "PHIL 360",
+            "PHYS 270",
+            "PHYS 370",
+            "PHYS 380",
+            "PSY 232",
+            "PSY 256",
+            "PSY 280",
+            "PSY 281",
+            "PSY 330",
+            "PSY 331",
+            "PSY 348",
+            "PSY 349",
+            "PSY 350",
+            "PSY 380",
+            "PSY 381",
+            "SOC 315",
+            "NEUR 480",
+            "NEUR 481"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "BIO 101",
+            "CHEM 120",
+            "CSC 121",
+            "PSY 100",
+            "PSY 214",
+            "MATH 141"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "BIO 382",
+            "PSY 300",
+            "PSY 301",
+            "NEUR 320",
+            "NEUR 341",
+            "BIO 203",
+            "BIO 241",
+            "BIO 320",
+            "BIO 325",
+            "BIO 314",
+            "BIO 315",
+            "BIO 335",
+            "BIO 381",
+            "BIO 385",
+            "BIO 415",
+            "CHEM 240",
+            "CHEM 343",
+            "CSC 233",
+            "CSC 320",
+            "CSC 330",
+            "CSC 360",
+            "KINS 254",
+            "KINS 350",
+            "KINS 410",
+            "NEUR 348",
+            "NEUR 349",
+            "PHIL 234",
+            "PHIL 360",
+            "PHYS 270",
+            "PHYS 370",
+            "PHYS 380",
+            "PSY 232",
+            "PSY 256",
+            "PSY 280",
+            "PSY 281",
+            "PSY 330",
+            "PSY 331",
+            "PSY 348",
+            "PSY 349",
+            "PSY 350",
+            "PSY 380",
+            "PSY 381",
+            "SOC 315"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "NEUR 480",
+            "NEUR 481"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "PSY 300",
+            "NEUR 320",
+            "NEUR 480"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peace-conflict-studies-major",
+      "name": "Peace and Conflict Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PEACE 100",
+            "PEACE 200",
+            "PEACE 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philosophy-major",
+      "name": "Philosophy",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Philosophy",
+          "type": "all",
+          "courses": [
+            "PHIL 212",
+            "PHIL 213",
+            "PHIL 230",
+            "PHIL 340",
+            "PHIL 209",
+            "PHIL 419",
+            "PHIL 490"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PHIL 212",
+            "PHIL 213"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PHIL 230",
+            "PHIL 340",
+            "PHIL 209"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "PHIL 490"
+          ]
+        },
+        {
+          "name": "Major Requirements for Philosophy bridged to another discipline",
+          "type": "all",
+          "courses": [
+            "PHIL 470",
+            "PHIL 491"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PHIL 470",
+            "PHIL 491"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "PHIL 470",
+            "PHIL 491"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-major",
+      "name": "Physics",
+      "type": "Major",
+      "totalCredits": 67,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Physics",
+          "type": "all",
+          "courses": [
+            "PHYS 120",
+            "PHYS 130",
+            "PHYS 210",
+            "PHYS 220",
+            "PHYS 280",
+            "PHYS 480",
+            "PHYS 320",
+            "PHYS 340",
+            "PHYS 350",
+            "PHYS 360",
+            "PHYS 370",
+            "PHYS 380",
+            "PHYS 410",
+            "PHYS 420",
+            "PHYS 430",
+            "PHYS 440",
+            "PHYS 390",
+            "MATH 135",
+            "MATH 152"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 120",
+            "PHYS 130",
+            "PHYS 210",
+            "PHYS 220",
+            "PHYS 280",
+            "PHYS 480"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 320",
+            "PHYS 340",
+            "PHYS 350",
+            "PHYS 360",
+            "PHYS 370",
+            "PHYS 380",
+            "PHYS 410",
+            "PHYS 420",
+            "PHYS 430",
+            "PHYS 440"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "PHYS 480",
+            "PHYS 390"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Physics",
+          "type": "all",
+          "courses": [
+            "PHYS 120",
+            "PHYS 130",
+            "PHYS 210",
+            "PHYS 220",
+            "PHYS 310",
+            "PHYS 320",
+            "PHYS 340",
+            "PHYS 350",
+            "PHYS 360",
+            "PHYS 370",
+            "PHYS 380",
+            "PHYS 410",
+            "PHYS 420",
+            "PHYS 430",
+            "PHYS 440"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 120",
+            "PHYS 130",
+            "PHYS 210",
+            "PHYS 220"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 310",
+            "PHYS 320",
+            "PHYS 340",
+            "PHYS 350",
+            "PHYS 360",
+            "PHYS 370",
+            "PHYS 380",
+            "PHYS 410",
+            "PHYS 420",
+            "PHYS 430",
+            "PHYS 440"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "political-science-major",
+      "name": "Political Science",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Political Science",
+          "type": "all",
+          "courses": [
+            "POLS 110",
+            "POLS 130",
+            "POLS 150",
+            "POLS 170",
+            "POLS 318",
+            "POLS 450"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "POLS 110",
+            "POLS 130",
+            "POLS 150",
+            "POLS 170",
+            "POLS 318",
+            "POLS 450"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "POLS 450"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "POLS 318"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Political Science",
+          "type": "all",
+          "courses": [
+            "POLS 110",
+            "POLS 130",
+            "POLS 150",
+            "POLS 170"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "POLS 110",
+            "POLS 130",
+            "POLS 150",
+            "POLS 170"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pre-engineering-major",
+      "name": "Pre-engineering",
+      "type": "Major",
+      "totalCredits": 40,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 253",
+            "PHYS 141",
+            "PHYS 142"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-major",
+      "name": "Psychology",
+      "type": "Major",
+      "totalCredits": 46,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Psychology",
+          "type": "all",
+          "courses": [
+            "PSY 100",
+            "PSY 214",
+            "PSY 215",
+            "PSY 280",
+            "PSY 300",
+            "PSY 301",
+            "PSY 330",
+            "PSY 331",
+            "PSY 380",
+            "PSY 381",
+            "PSY 260",
+            "PSY 261",
+            "PSY 290",
+            "PSY 232",
+            "PSY 360",
+            "PSY 493",
+            "PSY 495",
+            "PSY 496",
+            "MATH 135"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PSY 100",
+            "PSY 214",
+            "PSY 215"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PSY 280",
+            "PSY 300",
+            "PSY 301",
+            "PSY 330",
+            "PSY 331",
+            "PSY 380",
+            "PSY 381",
+            "PSY 260",
+            "PSY 261",
+            "PSY 290",
+            "PSY 232",
+            "PSY 360",
+            "PSY 215"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "PSY 493",
+            "PSY 495",
+            "PSY 496"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "PSY 215",
+            "PSY 493"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Psychology",
+          "type": "all",
+          "courses": [
+            "PSY 100",
+            "PSY 214",
+            "PSY 215"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "PSY 100"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "PSY 214",
+            "PSY 215"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "religious-studies-major",
+      "name": "Religious Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "REL 100",
+            "REL 200",
+            "REL 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romance-languages-major",
+      "name": "Romance Languages",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Romance Languages",
+          "type": "all",
+          "courses": [
+            "FREN 420",
+            "HISP 456",
+            "ITAL 375",
+            "HISP 430"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "FREN 420",
+            "HISP 456",
+            "ITAL 375"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "HISP 430",
+            "HISP 456",
+            "FREN 420",
+            "ITAL 375"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sociology-major",
+      "name": "Sociology",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Sociology",
+          "type": "all",
+          "courses": [
+            "SOC 100",
+            "SOC 303",
+            "SOC 401",
+            "SOC 410"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "SOC 100",
+            "SOC 303",
+            "SOC 401",
+            "SOC 410"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "SOC 410"
+          ]
+        },
+        {
+          "name": "Writing in the Major",
+          "type": "all",
+          "courses": [
+            "SOC 401"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Sociology",
+          "type": "all",
+          "courses": [
+            "SOC 100"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "SOC 100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio-art-major",
+      "name": "Studio Art",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "ART 100",
+            "ART 200",
+            "ART 300"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theatre-major",
+      "name": "Theatre",
+      "type": "Major",
+      "totalCredits": 95,
+      "requirementGroups": [
+        {
+          "name": "Major Requirements for Theatre",
+          "type": "all",
+          "courses": [
+            "COMM 200",
+            "COMM 215",
+            "COMM 233",
+            "COMM 223",
+            "COMM 225",
+            "COMM 111",
+            "COMM 117",
+            "COMM 314",
+            "COMM 227",
+            "COMM 322",
+            "COMM 323",
+            "COMM 325",
+            "COMM 326",
+            "COMM 327",
+            "COMM 328",
+            "COMM 235",
+            "COMM 237",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 213",
+            "COMM 214",
+            "COMM 310",
+            "COMM 311",
+            "COMM 315",
+            "COMM 316",
+            "COMM 317",
+            "COMM 319",
+            "COMM 350"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "COMM 200",
+            "COMM 215",
+            "COMM 233",
+            "COMM 223",
+            "COMM 225",
+            "COMM 111",
+            "COMM 117",
+            "COMM 314"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "COMM 223",
+            "COMM 225",
+            "COMM 227",
+            "COMM 322",
+            "COMM 323",
+            "COMM 325",
+            "COMM 326",
+            "COMM 327",
+            "COMM 328",
+            "COMM 233",
+            "COMM 235",
+            "COMM 237",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 213",
+            "COMM 214",
+            "COMM 215",
+            "COMM 310",
+            "COMM 311",
+            "COMM 315",
+            "COMM 316",
+            "COMM 317",
+            "COMM 319"
+          ]
+        },
+        {
+          "name": "Senior Requirement & Capstone Experience",
+          "type": "all",
+          "courses": [
+            "COMM 314",
+            "COMM 315",
+            "COMM 322",
+            "COMM 323",
+            "COMM 326",
+            "COMM 327",
+            "COMM 334",
+            "COMM 335",
+            "COMM 337",
+            "COMM 350"
+          ]
+        },
+        {
+          "name": "Minor Requirements for Theatre",
+          "type": "all",
+          "courses": [
+            "COMM 117",
+            "COMM 111",
+            "COMM 210",
+            "COMM 211",
+            "COMM 213",
+            "COMM 214",
+            "COMM 314",
+            "COMM 310",
+            "COMM 311",
+            "COMM 316",
+            "COMM 317",
+            "COMM 319"
+          ]
+        },
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "COMM 117"
+          ]
+        },
+        {
+          "name": "Other Required Courses",
+          "type": "all",
+          "courses": [
+            "COMM 111",
+            "COMM 210",
+            "COMM 211",
+            "COMM 213",
+            "COMM 214",
+            "COMM 314",
+            "COMM 310",
+            "COMM 311",
+            "COMM 316",
+            "COMM 317",
+            "COMM 319"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "womens-gender-sexuality-studies-major",
+      "name": "Women's, Gender, and Sexuality Studies",
+      "type": "Major",
+      "totalCredits": 32,
+      "requirementGroups": [
+        {
+          "name": "Core Courses",
+          "type": "all",
+          "courses": [
+            "WGSS 100",
+            "WGSS 200",
+            "WGSS 300"
+          ]
         }
       ]
     }
   ],
   "minors": [
     {
+      "id": "anthropology-minor",
+      "name": "Anthropology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ANTH 100",
+            "ANTH 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-statistics-minor",
+      "name": "Applied Statistics",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MATH 151",
+            "MATH 152",
+            "MATH 331"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-history-minor",
+      "name": "Art History",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ARTH 100",
+            "ARTH 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asian-studies-minor",
+      "name": "Asian Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ASIA 100",
+            "ASIA 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astronomy-minor",
+      "name": "Astronomy",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ASTR 100",
+            "ASTR 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-minor",
+      "name": "Biochemistry",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 131",
+            "CHEM 132",
+            "BIOL 141"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-administration-minor",
+      "name": "Business Administration",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "BUSA 100",
+            "BUSA 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-analytics-minor",
+      "name": "Business Analytics",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "BUSA 100",
+            "MATH 331"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-minor",
+      "name": "Chemistry",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "CHEM 131",
+            "CHEM 132"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chinese-minor",
+      "name": "Chinese",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "CHIN 100",
+            "CHIN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classical-archaeology-minor",
+      "name": "Classical Archaeology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "CLST 100",
+            "CLST 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication-minor",
+      "name": "Communication",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "COMM 100",
+            "COMM 200"
+          ]
+        }
+      ]
+    },
+    {
       "id": "computer-science-minor",
       "name": "Computer Science",
-      "type": "minor",
-      "department": "Computer Science",
-      "credits": 16,
-      "description": "Introduction to computer science concepts and programming.",
-      "requirements": [
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
         {
-          "category": "Required Courses",
+          "name": "Required Courses",
+          "type": "all",
           "courses": [
-            "COMP 130",
-            "COMP 163",
-            "COMP 164"
+            "CSC 121",
+            "CSC 232",
+            "CSC 340"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "data-science-minor",
+      "name": "Data Science",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
         {
-          "category": "Electives",
-          "credits": 4,
-          "description": "Choose one COMP 200+ level course"
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "CSC 121",
+            "MATH 331"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-minor",
+      "name": "Economics",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "ECON 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-literature-minor",
+      "name": "English Literature",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ENGL 150",
+            "ENGL 250"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environmental-science-minor",
+      "name": "Environmental Science",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ENVS 100",
+            "BIOL 141"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "film-media-arts-minor",
+      "name": "Film and Media Arts",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "FILM 100",
+            "FILM 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-minor",
+      "name": "Finance",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ECON 100",
+            "MATH 151"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geography-minor",
+      "name": "Geography",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "GEOG 100",
+            "GEOG 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geology-minor",
+      "name": "Geology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "GEOL 100",
+            "GEOL 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "german-minor",
+      "name": "German",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "GERM 100",
+            "GERM 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "german-studies-minor",
+      "name": "German Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "GERM 100",
+            "GERM 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global-french-studies-minor",
+      "name": "Global French Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "FREN 100",
+            "FREN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hispanic-studies-minor",
+      "name": "Hispanic Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "SPAN 100",
+            "SPAN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-minor",
+      "name": "History",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "HIST 100",
+            "HIST 101"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "international-business-minor",
+      "name": "International Business",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "BUSA 100",
+            "ECON 100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "italian-cultural-studies-minor",
+      "name": "Italian Cultural Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ITAL 100",
+            "ITAL 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japanese-minor",
+      "name": "Japanese",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "JAPN 100",
+            "JAPN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japanese-studies-minor",
+      "name": "Japanese Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "JAPN 100",
+            "JAPN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jazz-studies-minor",
+      "name": "Jazz Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MUS 100",
+            "MUS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinesiology-minor",
+      "name": "Kinesiology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "KINE 100",
+            "KINE 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin-minor",
+      "name": "Latin",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "LATN 100",
+            "LATN 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin-american-caribbean-studies-minor",
+      "name": "Latin American and Caribbean Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "LACS 100",
+            "LACS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leadership-minor",
+      "name": "Leadership",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "LEAD 100",
+            "LEAD 200"
+          ]
         }
       ]
     },
     {
       "id": "mathematics-minor",
       "name": "Mathematics",
-      "type": "minor",
-      "department": "Mathematics",
-      "credits": 16,
-      "description": "Foundation in mathematical reasoning and problem-solving.",
-      "requirements": [
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
         {
-          "category": "Required Courses",
+          "name": "Required Courses",
+          "type": "all",
           "courses": [
             "MATH 151",
             "MATH 152",
-            "MATH 251"
+            "MATH 270"
           ]
-        },
-        {
-          "category": "Electives",
-          "credits": 4,
-          "description": "Choose one MATH 200+ level course"
         }
       ]
     },
     {
-      "id": "business-minor",
-      "name": "Business",
-      "type": "minor",
-      "department": "Economics and Management",
-      "credits": 16,
-      "description": "Introduction to business principles and practices.",
-      "requirements": [
+      "id": "media-studies-minor",
+      "name": "Media Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
         {
-          "category": "Required Courses",
+          "name": "Required Courses",
+          "type": "all",
           "courses": [
-            "ECON 100",
-            "MGMT 200",
-            "MGMT 201"
+            "MEDIA 100",
+            "MEDIA 200"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "museum-studies-minor",
+      "name": "Museum Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
         {
-          "category": "Electives",
-          "credits": 4,
-          "description": "Choose one MGMT 200+ level course"
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MUSE 100",
+            "MUSE 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music-minor",
+      "name": "Music",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MUS 100",
+            "MUS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music-creation-technology-minor",
+      "name": "Music Creation and Technology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MUS 100",
+            "MUS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "musical-theatre-minor",
+      "name": "Musical Theatre",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "MUS 100",
+            "THEA 100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neuroscience-minor",
+      "name": "Neuroscience",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "PSYC 100",
+            "BIOL 141"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peace-conflict-studies-minor",
+      "name": "Peace and Conflict Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "PEACE 100",
+            "PEACE 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philosophy-minor",
+      "name": "Philosophy",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "PHIL 100",
+            "PHIL 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-minor",
+      "name": "Physics",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "PHYS 141",
+            "PHYS 142"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "political-science-minor",
+      "name": "Political Science",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "POLS 100",
+            "POLS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-minor",
+      "name": "Psychology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "PSYC 100",
+            "PSYC 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "religious-studies-minor",
+      "name": "Religious Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "REL 100",
+            "REL 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rhetoric-interpersonal-communication-minor",
+      "name": "Rhetoric and Interpersonal Communication",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "RHET 100",
+            "RHET 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romance-languages-minor",
+      "name": "Romance Languages",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ROML 100",
+            "ROML 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sociology-minor",
+      "name": "Sociology",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "SOC 100",
+            "SOC 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio-art-minor",
+      "name": "Studio Art",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "ART 100",
+            "ART 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sustainability-minor",
+      "name": "Sustainability",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "SUST 100",
+            "SUST 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theatre-minor",
+      "name": "Theatre",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "THEA 100",
+            "THEA 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "womens-gender-sexuality-studies-minor",
+      "name": "Women's, Gender, and Sexuality Studies",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "WGSS 100",
+            "WGSS 200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-literature-minor",
+      "name": "World Literature",
+      "type": "Minor",
+      "totalCredits": 20,
+      "requirementGroups": [
+        {
+          "name": "Required Courses",
+          "type": "all",
+          "courses": [
+            "WLIT 100",
+            "WLIT 200"
+          ]
         }
       ]
     }
   ],
   "generalEducation": {
     "id": "general-education",
-    "name": "General Education Requirements",
-    "type": "general",
-    "description": "Core curriculum requirements for all DePauw students.",
-    "totalCredits": 48,
+    "name": "The DePauw Curriculum",
+    "description": "The DePauw Curriculum consists of a First-Year Seminar, Exploratory Foundations, Competencies, Extended Studies, and at least one Major. Students can also pursue optional minors and/or honors/fellows programs.",
+    "totalCredits": 31,
     "requirements": [
       {
-        "category": "First-Year Seminar",
-        "credits": 4,
-        "description": "Required first-year experience course",
-        "courses": ["FYSE 101", "FYSE 102", "FYSE 103"]
+        "category": "First-Year Seminar (FYS)",
+        "description": "First-Year Seminars introduce students to college work and prepare students for the courses they will take later at DePauw. As seminars, these courses emphasize and nurture discussion and other skills essential to active student participation in their own education.",
+        "credits": 1,
+        "courses": [
+          "FYSE 101"
+        ]
       },
       {
-        "category": "Writing",
-        "credits": 4,
-        "description": "Composition and rhetoric course",
-        "courses": ["WRIT 101", "WRIT 102"]
+        "category": "Arts and Humanities (AH)",
+        "description": "These courses explore fundamental questions of experience, belief, and expression. Through critical observation, textual analysis, and creative engagement, students consider the realms recalled or imagined in the arts, history, literature, philosophy, and religion.",
+        "credits": 2,
+        "courses": [
+          "ARTH 100",
+          "ENGL 150",
+          "HIST 100",
+          "PHIL 100",
+          "REL 100"
+        ]
       },
       {
-        "category": "Quantitative Reasoning",
-        "credits": 4,
-        "description": "Mathematics or statistics course",
-        "courses": ["MATH 130", "MATH 151", "STAT 120"]
+        "category": "Science and Mathematics (SM)",
+        "description": "These courses explore the physical, mechanical, and quantitative working of numbers, matter, and life. Through observation, experimentation, and scientific and mathematical reasoning, students seek to comprehend the world and model its operations.",
+        "credits": 2,
+        "courses": [
+          "BIOL 141",
+          "CHEM 131",
+          "MATH 151",
+          "PHYS 141"
+        ]
       },
       {
-        "category": "Natural Science",
-        "credits": 8,
-        "description": "Two courses in natural sciences",
-        "courses": ["BIOL 141", "CHEM 131", "PHYS 141", "GEOL 101"]
+        "category": "Social Science (SS)",
+        "description": "These courses explore cultural, economic, political, and social questions. Through observational, comparative, and analytic methods, students seek to understand human identities and interactions at the personal, local, and global levels.",
+        "credits": 2,
+        "courses": [
+          "ANTH 151",
+          "ECON 100",
+          "POLS 100",
+          "PSY 100",
+          "SOC 100"
+        ]
       },
       {
-        "category": "Social Science",
-        "credits": 8,
-        "description": "Two courses in social sciences",
-        "courses": ["ECON 100", "PSYC 100", "SOCI 100", "POLS 100"]
+        "category": "Intercultural Engagement Through Language (LA)",
+        "description": "Courses in this area allow students to enter into global and local conversations about topics in a wide range of disciplines while building their proficiency in a language other than English.",
+        "credits": 2,
+        "courses": [
+          "FREN 100",
+          "GERM 100",
+          "SPAN 100",
+          "JAPN 100",
+          "CHIN 100"
+        ]
       },
       {
-        "category": "Arts and Humanities",
-        "credits": 8,
-        "description": "Two courses in arts and humanities",
-        "courses": ["ENGL 150", "HIST 100", "ART 101", "MUS 101"]
+        "category": "Global Learning (GL)",
+        "description": "Courses with an emphasis in global learning engage students in the politics, society, religion, history, and/or arts of a culture outside the United States or address how different societies respond to inherently global issues.",
+        "credits": 1,
+        "courses": [
+          "GL 100"
+        ]
       },
       {
-        "category": "Global Perspectives",
-        "credits": 4,
-        "description": "Course with international focus",
-        "courses": ["HIST 200", "POLS 200", "LANG 200"]
+        "category": "Power, Privilege and Diversity (PPD)",
+        "description": "These courses analyze the interplay of power and privilege in human interactions in a U.S. context. Every PPD course will substantially engage with anti-Black racism and/or with the genocide, forced removal, and other injustices inflicted on Indigenous peoples.",
+        "credits": 1,
+        "courses": [
+          "PPD 100"
+        ]
       },
       {
-        "category": "Values and Ethics",
-        "credits": 4,
-        "description": "Course exploring ethical reasoning",
-        "courses": ["PHIL 100", "REL 100", "ENVS 200"]
+        "category": "Expository Writing (W)",
+        "description": "The University believes that writing across the curriculum is an essential means for thinking and learning in all disciplines. Students complete a course with a W designation during their sophomore year.",
+        "credits": 1,
+        "courses": [
+          "WRIT 200"
+        ]
       },
       {
-        "category": "Physical Education",
-        "credits": 4,
-        "description": "Two semesters of physical education",
-        "courses": ["PE 101", "PE 102"]
+        "category": "Quantitative Reasoning (Q)",
+        "description": "The ability to understand, evaluate, interpret, and analyze numerical data and logical information is a central component of a liberal arts education. Students must complete a Q course by the end of their third year of study.",
+        "credits": 1,
+        "courses": [
+          "MATH 141",
+          "STAT 100"
+        ]
+      },
+      {
+        "category": "Oral Communication (S)",
+        "description": "Effective expression in speech as well as writing has been perennially at the core of liberal education. S courses are usually offered as part of the senior capstone or in 300-level courses within each department.",
+        "credits": 1,
+        "courses": [
+          "COMM 100"
+        ]
+      },
+      {
+        "category": "Extended Studies",
+        "description": "Extended Studies encourage students to apply their learning in professional settings, intensely study a single subject in a short period of time, engage in a research experience, study abroad, or learn through volunteer service.",
+        "credits": 2,
+        "courses": [
+          "EXT 100",
+          "EXT 200"
+        ]
       }
     ]
   }

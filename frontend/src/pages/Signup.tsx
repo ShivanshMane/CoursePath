@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import { GraduationCap, Mail, Lock, AlertCircle, CheckCircle } from 'lucide-react';
+import { Mail, Lock, AlertCircle, CheckCircle } from 'lucide-react';
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -61,21 +61,17 @@ const Signup: React.FC = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         {/* Logo and Title */}
         <div className="flex justify-center">
-          <div className="flex items-center justify-center w-20 h-20 bg-yellow-400 border-4 border-black rounded-lg shadow-lg">
-            <div className="text-center">
-              <div className="w-12 h-12 mx-auto mb-1">
-                <div className="w-full h-full bg-yellow-400 border-2 border-black rounded relative overflow-hidden">
-                  <div className="absolute bottom-0 left-1 w-8 h-3 bg-black"></div>
-                  <div className="absolute bottom-0 right-2 w-6 h-6 bg-black rounded-full"></div>
-                  <div className="absolute top-1 left-2 w-3 h-2 bg-black rounded"></div>
-                </div>
-              </div>
-              <div className="text-xs font-bold text-black leading-tight">
-                <div>DEPAUW</div>
-                <div>UNIVERSITY</div>
-              </div>
-            </div>
-          </div>
+          <img
+            src="/images/depauw-logo.png"
+            alt="DePauw University"
+            className="w-20 h-20 object-contain"
+            onError={(e) => {
+              const img = e.currentTarget as HTMLImageElement;
+              if (img.src.indexOf('/depauw-logo.png') === -1) {
+                img.src = '/depauw-logo.png';
+              }
+            }}
+          />
         </div>
         <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
           Create your account

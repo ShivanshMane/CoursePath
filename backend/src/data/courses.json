@@ -1,303 +1,1646 @@
 {
   "courses": [
     {
-      "code": "COMP 130",
-      "title": "Introduction to Computer Science",
-      "credits": 4,
-      "description": "An introduction to computer science and programming using Python. Topics include variables, control structures, functions, and basic algorithms.",
+      "code": "ANTH 290",
+      "title": "ANTH 290 Course",
+      "credits": 1,
+      "description": "Advanced study of anthropological concepts and methods",
+      "prerequisites": [
+        "ANTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ANTH 360",
+      "title": "ANTH 360 Course",
+      "credits": 1,
+      "description": "In-depth exploration of anthropological concepts and methods",
+      "prerequisites": [
+        "ANTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ANTH 380",
+      "title": "ANTH 380 Course",
+      "credits": 1,
+      "description": "In-depth exploration of anthropological concepts and methods",
+      "prerequisites": [
+        "ANTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ANTH 390",
+      "title": "ANTH 390 Course",
+      "credits": 1,
+      "description": "In-depth exploration of anthropological concepts and methods",
+      "prerequisites": [
+        "ANTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ANTH 450",
+      "title": "ANTH 450 Course",
+      "credits": 1,
+      "description": "In-depth exploration of anthropological concepts and methods",
+      "prerequisites": [
+        "ANTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ARTD 120",
+      "title": "Introduction to Design Studies",
+      "credits": 1,
+      "description": "Introduction to design principles and visual communication.",
       "prerequisites": [],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Computer Science",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": ["Quantitative Reasoning"]
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "COMP 163",
-      "title": "Data Structures and Algorithms",
-      "credits": 4,
-      "description": "Study of fundamental data structures including arrays, linked lists, stacks, queues, trees, and graphs. Algorithm analysis and design techniques.",
-      "prerequisites": ["COMP 130"],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Computer Science",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 164",
-      "title": "Object-Oriented Programming",
-      "credits": 4,
-      "description": "Introduction to object-oriented programming concepts using Java. Classes, objects, inheritance, polymorphism, and encapsulation.",
-      "prerequisites": ["COMP 130"],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Computer Science",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 270",
-      "title": "Computer Organization",
-      "credits": 4,
-      "description": "Introduction to computer organization and architecture. Machine language, assembly language, CPU design, and memory systems.",
-      "prerequisites": ["COMP 163"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Computer Science",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 271",
-      "title": "Database Systems",
-      "credits": 4,
-      "description": "Introduction to database design and implementation. SQL, relational database theory, and database management systems.",
-      "prerequisites": ["COMP 163"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Computer Science",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 272",
-      "title": "Software Engineering",
-      "credits": 4,
-      "description": "Software development methodologies, project management, testing, and quality assurance. Team-based software development.",
-      "prerequisites": ["COMP 164"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Computer Science",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 330",
-      "title": "Operating Systems",
-      "credits": 4,
-      "description": "Study of operating system concepts including process management, memory management, file systems, and concurrency.",
-      "prerequisites": ["COMP 270"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Computer Science",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "COMP 331",
-      "title": "Computer Networks",
-      "credits": 4,
-      "description": "Network protocols, TCP/IP, network security, and distributed systems. Hands-on experience with network programming.",
-      "prerequisites": ["COMP 270"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Computer Science",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "MATH 151",
-      "title": "Calculus I",
-      "credits": 4,
-      "description": "Introduction to differential calculus. Limits, derivatives, and applications of derivatives.",
+      "code": "ARTH 190",
+      "title": "ARTH 190 Course",
+      "credits": 1,
+      "description": "Study of art history and visual culture",
       "prerequisites": [],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Mathematics",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": ["Quantitative Reasoning"]
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ARTH 290",
+      "title": "ARTH 290 Course",
+      "credits": 1,
+      "description": "Study of art history and visual culture",
+      "prerequisites": [
+        "ARTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ARTH 390",
+      "title": "ARTH 390 Course",
+      "credits": 1,
+      "description": "Study of art history and visual culture",
+      "prerequisites": [
+        "ARTH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 140",
+      "title": "ASIA 140 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 150",
+      "title": "ASIA 150 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 190",
+      "title": "ASIA 190 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 250",
+      "title": "ASIA 250 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [
+        "ASIA 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 290",
+      "title": "ASIA 290 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [
+        "ASIA 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 390",
+      "title": "ASIA 390 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [
+        "ASIA 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 470",
+      "title": "ASIA 470 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [
+        "ASIA 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ASIA 480",
+      "title": "ASIA 480 Course",
+      "credits": 1,
+      "description": "Exploration of Asian cultures and societies",
+      "prerequisites": [
+        "ASIA 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 120",
+      "title": "Structure and Properties of Organic Molecules",
+      "credits": 1,
+      "description": "Introduction to organic chemistry and molecular structure.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 130",
+      "title": "Structure and Properties of Inorganic Compounds",
+      "credits": 1,
+      "description": "Study of inorganic compounds and their properties.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 170",
+      "title": "CHEM 170 Course",
+      "credits": 1,
+      "description": "Introduction to chemical concepts and laboratory techniques",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 180",
+      "title": "CHEM 180 Course",
+      "credits": 1,
+      "description": "Introduction to chemical concepts and laboratory techniques",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 240",
+      "title": "CHEM 240 Course",
+      "credits": 1,
+      "description": "Advanced study of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 260",
+      "title": "CHEM 260 Course",
+      "credits": 1,
+      "description": "Advanced study of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 310",
+      "title": "CHEM 310 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 320",
+      "title": "CHEM 320 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 400",
+      "title": "CHEM 400 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 440",
+      "title": "CHEM 440 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 450",
+      "title": "CHEM 450 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 460",
+      "title": "CHEM 460 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CHEM 490",
+      "title": "CHEM 490 Course",
+      "credits": 1,
+      "description": "In-depth exploration of chemical concepts and laboratory techniques",
+      "prerequisites": [
+        "CHEM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CLST 100",
+      "title": "CLST 100 Course",
+      "credits": 1,
+      "description": "Introduction to course concepts and principles",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CLST 120",
+      "title": "CLST 120 Course",
+      "credits": 1,
+      "description": "Introduction to course concepts and principles",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CLST 200",
+      "title": "CLST 200 Course",
+      "credits": 1,
+      "description": "Advanced study of course concepts and principles",
+      "prerequisites": [
+        "CLST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CLST 300",
+      "title": "CLST 300 Course",
+      "credits": 1,
+      "description": "In-depth exploration of course concepts and principles",
+      "prerequisites": [
+        "CLST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CLST 310",
+      "title": "CLST 310 Course",
+      "credits": 1,
+      "description": "In-depth exploration of course concepts and principles",
+      "prerequisites": [
+        "CLST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 101",
+      "title": "COMM 101 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 102",
+      "title": "COMM 102 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 110",
+      "title": "COMM 110 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 111",
+      "title": "Acting I",
+      "credits": 1,
+      "description": "Introduction to acting techniques and performance.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 200",
+      "title": "COMM 200 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [
+        "COMM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 210",
+      "title": "Performance Studies I",
+      "credits": 1,
+      "description": "Introduction to performance theory and practice.",
+      "prerequisites": [
+        "COMM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 310",
+      "title": "COMM 310 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [
+        "COMM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 350",
+      "title": "COMM 350 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [
+        "COMM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "COMM 450",
+      "title": "COMM 450 Course",
+      "credits": 1,
+      "description": "Study of communication theory and practice",
+      "prerequisites": [
+        "COMM 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 120",
+      "title": "CSC 120 Course",
+      "credits": 1,
+      "description": "Introduction to computer science concepts and programming",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 121",
+      "title": "Computer Science I",
+      "credits": 1,
+      "description": "This is an introductory course in which problem solving and algorithm development are studied by considering computer science topics, such as computer graphics, graphical user interfaces, modeling and simulation, artificial intelligence and information management systems.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 125",
+      "title": "Principles of Software Development",
+      "credits": 1,
+      "description": "Introduction to software engineering principles and practices.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 231",
+      "title": "Computer Systems",
+      "credits": 1,
+      "description": "Introduction to computer organization and systems programming.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 232",
+      "title": "Computer Science II",
+      "credits": 1,
+      "description": "Continuation of Computer Science I with advanced programming concepts and data structures.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 235",
+      "title": "Data Structures",
+      "credits": 1,
+      "description": "Study of fundamental data structures and algorithms.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 320",
+      "title": "CSC 320 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 330",
+      "title": "CSC 330 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 340",
+      "title": "CSC 340 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 350",
+      "title": "CSC 350 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 360",
+      "title": "CSC 360 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 370",
+      "title": "CSC 370 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 380",
+      "title": "CSC 380 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 430",
+      "title": "CSC 430 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 440",
+      "title": "CSC 440 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "CSC 480",
+      "title": "CSC 480 Course",
+      "credits": 1,
+      "description": "In-depth exploration of computer science concepts and programming",
+      "prerequisites": [
+        "CSC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 100",
+      "title": "ECON 100 Course",
+      "credits": 1,
+      "description": "Introduction to economic principles and analysis",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 140",
+      "title": "ECON 140 Course",
+      "credits": 1,
+      "description": "Introduction to economic principles and analysis",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 210",
+      "title": "ECON 210 Course",
+      "credits": 1,
+      "description": "Advanced study of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 220",
+      "title": "Introduction to Financial Accounting",
+      "credits": 1,
+      "description": "The preparation, communication and use of economic information for decision-making, with a focus on external users.",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 280",
+      "title": "ECON 280 Course",
+      "credits": 1,
+      "description": "Advanced study of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 290",
+      "title": "ECON 290 Course",
+      "credits": 1,
+      "description": "Advanced study of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 320",
+      "title": "ECON 320 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 330",
+      "title": "ECON 330 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 350",
+      "title": "Introduction to Econometrics",
+      "credits": 1,
+      "description": "Introduction to statistical methods in economics.",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 360",
+      "title": "ECON 360 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 390",
+      "title": "ECON 390 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 410",
+      "title": "ECON 410 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 420",
+      "title": "ECON 420 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 430",
+      "title": "ECON 430 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 440",
+      "title": "ECON 440 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 450",
+      "title": "ECON 450 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 470",
+      "title": "ECON 470 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 480",
+      "title": "ECON 480 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "ECON 490",
+      "title": "ECON 490 Course",
+      "credits": 1,
+      "description": "In-depth exploration of economic principles and analysis",
+      "prerequisites": [
+        "ECON 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 100",
+      "title": "HIST 100 Course",
+      "credits": 1,
+      "description": "Study of historical events and analysis",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 200",
+      "title": "Topics in History",
+      "credits": 1,
+      "description": "Special topics in historical studies.",
+      "prerequisites": [
+        "HIST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 260",
+      "title": "HIST 260 Course",
+      "credits": 1,
+      "description": "Study of historical events and analysis",
+      "prerequisites": [
+        "HIST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 290",
+      "title": "HIST 290 Course",
+      "credits": 1,
+      "description": "Study of historical events and analysis",
+      "prerequisites": [
+        "HIST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 300",
+      "title": "HIST 300 Course",
+      "credits": 1,
+      "description": "Study of historical events and analysis",
+      "prerequisites": [
+        "HIST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "HIST 490",
+      "title": "HIST 490 Course",
+      "credits": 1,
+      "description": "Study of historical events and analysis",
+      "prerequisites": [
+        "HIST 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MATH 135",
+      "title": "Calculus with Review I",
+      "credits": 1,
+      "description": "First course in calculus with review of precalculus topics.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MATH 141",
+      "title": "Stats for Professionals",
+      "credits": 1,
+      "description": "Introduction to statistical methods for professional applications.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
     },
     {
       "code": "MATH 152",
       "title": "Calculus II",
-      "credits": 4,
-      "description": "Introduction to integral calculus. Integration techniques and applications of integrals.",
-      "prerequisites": ["MATH 151"],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Mathematics",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": []
+      "credits": 1,
+      "description": "Second course in calculus covering integration and series.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "MATH 251",
-      "title": "Calculus III",
-      "credits": 4,
-      "description": "Multivariable calculus. Partial derivatives, multiple integrals, and vector calculus.",
-      "prerequisites": ["MATH 152"],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Mathematics",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "MATH 252",
+      "code": "MATH 270",
       "title": "Linear Algebra",
-      "credits": 4,
-      "description": "Vector spaces, linear transformations, eigenvalues, and eigenvectors. Applications to various fields.",
-      "prerequisites": ["MATH 152"],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Mathematics",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
+      "credits": 1,
+      "description": "Study of vector spaces, linear transformations, and matrices.",
+      "prerequisites": [
+        "MATH 100"
+      ],
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "MATH 301",
-      "title": "Abstract Algebra",
-      "credits": 4,
-      "description": "Introduction to groups, rings, and fields. Proof techniques and algebraic structures.",
-      "prerequisites": ["MATH 252"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Mathematics",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
+      "code": "MATH 340",
+      "title": "MATH 340 Course",
+      "credits": 1,
+      "description": "In-depth exploration of mathematical concepts and problem-solving",
+      "prerequisites": [
+        "MATH 100"
+      ],
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "MATH 302",
-      "title": "Real Analysis",
-      "credits": 4,
-      "description": "Rigorous treatment of real numbers, sequences, series, continuity, and differentiability.",
-      "prerequisites": ["MATH 252"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Mathematics",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
+      "code": "MATH 390",
+      "title": "MATH 390 Course",
+      "credits": 1,
+      "description": "In-depth exploration of mathematical concepts and problem-solving",
+      "prerequisites": [
+        "MATH 100"
+      ],
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "ECON 100",
-      "title": "Principles of Economics",
-      "credits": 4,
-      "description": "Introduction to microeconomics and macroeconomics. Supply and demand, market structures, and economic policy.",
+      "code": "MATH 490",
+      "title": "MATH 490 Course",
+      "credits": 1,
+      "description": "In-depth exploration of mathematical concepts and problem-solving",
+      "prerequisites": [
+        "MATH 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 100",
+      "title": "MUS 100 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
       "prerequisites": [],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "Economics",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": ["Social Science"]
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "ECON 200",
-      "title": "Intermediate Microeconomics",
-      "credits": 4,
-      "description": "Advanced microeconomic theory including consumer choice, producer theory, and market equilibrium.",
-      "prerequisites": ["ECON 100", "MATH 151"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Economics",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "ECON 300",
-      "title": "Intermediate Macroeconomics",
-      "credits": 4,
-      "description": "Advanced macroeconomic theory including economic growth, business cycles, and monetary policy.",
-      "prerequisites": ["ECON 100", "MATH 151"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Economics",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "ECON 301",
-      "title": "Econometrics",
-      "credits": 4,
-      "description": "Statistical methods for economic analysis. Regression analysis and hypothesis testing.",
-      "prerequisites": ["ECON 200", "STAT 120"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Economics",
-      "level": "300",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "BIOL 141",
-      "title": "General Biology I",
-      "credits": 4,
-      "description": "Introduction to cellular biology, genetics, and molecular biology. Laboratory component included.",
+      "code": "MUS 102",
+      "title": "MUS 102 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
       "prerequisites": [],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "Biology",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": ["Natural Science"]
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "BIOL 142",
-      "title": "General Biology II",
-      "credits": 4,
-      "description": "Introduction to ecology, evolution, and organismal biology. Laboratory component included.",
-      "prerequisites": ["BIOL 141"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "Biology",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": []
-    },
-    {
-      "code": "ENGL 150",
-      "title": "Introduction to Literature",
-      "credits": 4,
-      "description": "Critical reading and analysis of poetry, drama, and fiction. Introduction to literary criticism.",
+      "code": "MUS 110",
+      "title": "MUS 110 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
       "prerequisites": [],
-      "corequisites": [],
-      "typicalTerms": ["Fall", "Spring"],
-      "department": "English",
-      "level": "100",
-      "offered": true,
-      "genEdCategories": ["Arts and Humanities"]
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "ENGL 200",
-      "title": "British Literature",
-      "credits": 4,
-      "description": "Survey of British literature from the medieval period to the present.",
-      "prerequisites": ["ENGL 150"],
-      "corequisites": [],
-      "typicalTerms": ["Fall"],
-      "department": "English",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": ["Arts and Humanities"]
+      "code": "MUS 130",
+      "title": "MUS 130 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
     },
     {
-      "code": "ENGL 250",
-      "title": "American Literature",
-      "credits": 4,
-      "description": "Survey of American literature from colonial times to the present.",
-      "prerequisites": ["ENGL 150"],
-      "corequisites": [],
-      "typicalTerms": ["Spring"],
-      "department": "English",
-      "level": "200",
-      "offered": true,
-      "genEdCategories": ["Arts and Humanities"]
+      "code": "MUS 140",
+      "title": "MUS 140 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 150",
+      "title": "MUS 150 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 170",
+      "title": "MUS 170 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 180",
+      "title": "MUS 180 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 190",
+      "title": "MUS 190 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 200",
+      "title": "MUS 200 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 210",
+      "title": "MUS 210 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 240",
+      "title": "MUS 240 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 280",
+      "title": "MUS 280 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 290",
+      "title": "MUS 290 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 300",
+      "title": "MUS 300 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 310",
+      "title": "MUS 310 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 320",
+      "title": "MUS 320 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 340",
+      "title": "MUS 340 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 360",
+      "title": "MUS 360 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 380",
+      "title": "MUS 380 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 390",
+      "title": "MUS 390 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 440",
+      "title": "MUS 440 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 450",
+      "title": "MUS 450 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "MUS 480",
+      "title": "MUS 480 Course",
+      "credits": 1,
+      "description": "Study of music theory and performance",
+      "prerequisites": [
+        "MUS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "NEUR 300",
+      "title": "NEUR 300 Course",
+      "credits": 1,
+      "description": "In-depth exploration of neuroscience and brain function",
+      "prerequisites": [
+        "NEUR 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "NEUR 320",
+      "title": "NEUR 320 Course",
+      "credits": 1,
+      "description": "In-depth exploration of neuroscience and brain function",
+      "prerequisites": [
+        "NEUR 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "NEUR 480",
+      "title": "NEUR 480 Course",
+      "credits": 1,
+      "description": "In-depth exploration of neuroscience and brain function",
+      "prerequisites": [
+        "NEUR 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 101",
+      "title": "PHIL 101 Course",
+      "credits": 1,
+      "description": "Introduction to philosophical thinking and ethics",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 220",
+      "title": "PHIL 220 Course",
+      "credits": 1,
+      "description": "Advanced study of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 230",
+      "title": "PHIL 230 Course",
+      "credits": 1,
+      "description": "Advanced study of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 240",
+      "title": "PHIL 240 Course",
+      "credits": 1,
+      "description": "Advanced study of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 340",
+      "title": "PHIL 340 Course",
+      "credits": 1,
+      "description": "In-depth exploration of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 360",
+      "title": "PHIL 360 Course",
+      "credits": 1,
+      "description": "In-depth exploration of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 470",
+      "title": "PHIL 470 Course",
+      "credits": 1,
+      "description": "In-depth exploration of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHIL 490",
+      "title": "PHIL 490 Course",
+      "credits": 1,
+      "description": "In-depth exploration of philosophical thinking and ethics",
+      "prerequisites": [
+        "PHIL 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 110",
+      "title": "PHYS 110 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 120",
+      "title": "PHYS 120 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 130",
+      "title": "PHYS 130 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 190",
+      "title": "PHYS 190 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 210",
+      "title": "EM Waves, Relativity & Thermal",
+      "credits": 1,
+      "description": "Study of electromagnetic waves, relativity, and thermal physics.",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 220",
+      "title": "PHYS 220 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 240",
+      "title": "PHYS 240 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 250",
+      "title": "PHYS 250 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 280",
+      "title": "PHYS 280 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 290",
+      "title": "PHYS 290 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 300",
+      "title": "PHYS 300 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 310",
+      "title": "PHYS 310 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 320",
+      "title": "PHYS 320 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 330",
+      "title": "PHYS 330 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 340",
+      "title": "PHYS 340 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 350",
+      "title": "PHYS 350 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 360",
+      "title": "PHYS 360 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 370",
+      "title": "PHYS 370 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 380",
+      "title": "PHYS 380 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 390",
+      "title": "PHYS 390 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 410",
+      "title": "PHYS 410 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 420",
+      "title": "PHYS 420 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 430",
+      "title": "PHYS 430 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 440",
+      "title": "PHYS 440 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PHYS 480",
+      "title": "PHYS 480 Course",
+      "credits": 1,
+      "description": "Study of physical principles and phenomena",
+      "prerequisites": [
+        "PHYS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 110",
+      "title": "POLS 110 Course",
+      "credits": 1,
+      "description": "Introduction to political science and government",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 130",
+      "title": "POLS 130 Course",
+      "credits": 1,
+      "description": "Introduction to political science and government",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 150",
+      "title": "POLS 150 Course",
+      "credits": 1,
+      "description": "Introduction to political science and government",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 170",
+      "title": "POLS 170 Course",
+      "credits": 1,
+      "description": "Introduction to political science and government",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 210",
+      "title": "POLS 210 Course",
+      "credits": 1,
+      "description": "Advanced study of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 220",
+      "title": "POLS 220 Course",
+      "credits": 1,
+      "description": "Advanced study of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 240",
+      "title": "POLS 240 Course",
+      "credits": 1,
+      "description": "Advanced study of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 270",
+      "title": "POLS 270 Course",
+      "credits": 1,
+      "description": "Advanced study of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 290",
+      "title": "POLS 290 Course",
+      "credits": 1,
+      "description": "Advanced study of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 330",
+      "title": "POLS 330 Course",
+      "credits": 1,
+      "description": "In-depth exploration of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 360",
+      "title": "POLS 360 Course",
+      "credits": 1,
+      "description": "In-depth exploration of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 370",
+      "title": "POLS 370 Course",
+      "credits": 1,
+      "description": "In-depth exploration of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 390",
+      "title": "POLS 390 Course",
+      "credits": 1,
+      "description": "In-depth exploration of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "POLS 450",
+      "title": "POLS 450 Course",
+      "credits": 1,
+      "description": "In-depth exploration of political science and government",
+      "prerequisites": [
+        "POLS 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PSY 100",
+      "title": "Introductory Psychology",
+      "credits": 1,
+      "description": "Introduction to the scientific study of behavior and mental processes.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "PSY 214",
+      "title": "Statistics for Behavioral Sciences",
+      "credits": 1,
+      "description": "Statistical methods for analyzing behavioral data.",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "REL 130",
+      "title": "REL 130 Course",
+      "credits": 1,
+      "description": "Introduction to religious studies and spirituality",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "SOC 100",
+      "title": "SOC 100 Course",
+      "credits": 1,
+      "description": "Study of sociological principles and social structures",
+      "prerequisites": [],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "SOC 201",
+      "title": "SOC 201 Course",
+      "credits": 1,
+      "description": "Study of sociological principles and social structures",
+      "prerequisites": [
+        "SOC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "SOC 210",
+      "title": "SOC 210 Course",
+      "credits": 1,
+      "description": "Study of sociological principles and social structures",
+      "prerequisites": [
+        "SOC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "SOC 310",
+      "title": "SOC 310 Course",
+      "credits": 1,
+      "description": "Study of sociological principles and social structures",
+      "prerequisites": [
+        "SOC 100"
+      ],
+      "termOffered": "Fall, Spring"
+    },
+    {
+      "code": "SOC 410",
+      "title": "SOC 410 Course",
+      "credits": 1,
+      "description": "Study of sociological principles and social structures",
+      "prerequisites": [
+        "SOC 100"
+      ],
+      "termOffered": "Fall, Spring"
     }
   ]
 }

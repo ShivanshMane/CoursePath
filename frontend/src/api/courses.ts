@@ -6,12 +6,7 @@ export interface Course {
   credits: number;
   description: string;
   prerequisites: string[];
-  corequisites: string[];
-  typicalTerms: string[];
-  department: string;
-  level: string;
-  offered: boolean;
-  genEdCategories: string[];
+  termOffered: string | null;
 }
 
 export interface CoursesResponse {

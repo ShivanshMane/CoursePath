@@ -5,7 +5,11 @@ import {
   signInWithEmailAndPassword, 
   signOut, 
   onAuthStateChanged,
-  AuthError
+  AuthError,
+  updateProfile as firebaseUpdateProfile,
+  updatePassword as firebaseUpdatePassword,
+  reauthenticateWithCredential,
+  EmailAuthProvider
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
 
@@ -15,6 +19,8 @@ interface AuthContextType {
   signUp: (email: string, password: string) => Promise<void>;
   signIn: (email: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
+  updateProfile: (data: { displayName?: string; academicYear?: string }) => Promise<void>;
+  updatePassword: (currentPassword: string, newPassword: string) => Promise<void>;
   error: string | null;
   clearError: () => void;
 }
@@ -38,7 +44,47 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Demo mode - provide mock user for testing
+  const DEMO_MODE = true;
+
   useEffect(() => {
+    if (DEMO_MODE) {
+      // Create a mock user object for demo
+      const mockUser = {
+        uid: 'bbd084de-8ee3-4ca2-9fc1-a5776a2710ef',
+        email: 'demo@depauw.edu',
+        displayName: 'Demo User',
+        emailVerified: true,
+        isAnonymous: false,
+        metadata: {},
+        providerData: [],
+        refreshToken: 'demo-token',
+        tenantId: null,
+        delete: () => Promise.resolve(),
+        getIdToken: () => Promise.resolve('demo-id-token'),
+        getIdTokenResult: () => Promise.resolve({
+          token: 'demo-id-token',
+          authTime: new Date().toISOString(),
+          issuedAtTime: new Date().toISOString(),
+          expirationTime: new Date(Date.now() + 3600000).toISOString(),
+          signInProvider: 'password',
+          signInSecondFactor: null,
+          claims: {},
+          audience: 'coursepath-demo',
+          issuer: 'https://securetoken.google.com/coursepath-demo'
+        }),
+        reload: () => Promise.resolve(),
+        toJSON: () => ({}),
+        phoneNumber: null,
+        photoURL: null,
+        providerId: 'firebase'
+      } as User;
+      
+      setUser(mockUser);
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
@@ -86,6 +132,66 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   };
 
+  const updateProfile = async (data: { displayName?: string; academicYear?: string }) => {
+    try {
+      setError(null);
+      if (!user) throw new Error('No user logged in');
+      
+      if (DEMO_MODE) {
+        // In demo mode, simulate profile update by updating local state
+        setUser(prev => prev ? { 
+          ...prev, 
+          displayName: data.displayName || prev.displayName 
+        } : null);
+        
+        // Store academic year in localStorage
+        if (data.academicYear) {
+          localStorage.setItem('academicYear', data.academicYear);
+        }
+        
+        return; // Exit early for demo mode
+      }
+      
+      await firebaseUpdateProfile(user, {
+        displayName: data.displayName
+      });
+      
+      // Store academic year in localStorage since Firebase doesn't have a built-in field for this
+      if (data.academicYear) {
+        localStorage.setItem('academicYear', data.academicYear);
+      }
+    } catch (error) {
+      const authError = error as AuthError;
+      setError(getErrorMessage(authError.code));
+      throw error;
+    }
+  };
+
+  const updatePassword = async (currentPassword: string, newPassword: string) => {
+    try {
+      setError(null);
+      if (!user) throw new Error('No user logged in');
+      
+      if (DEMO_MODE) {
+        // In demo mode, simulate password update
+        // Store new password in localStorage (not secure, but for demo purposes)
+        localStorage.setItem('demoPassword', newPassword);
+        return; // Exit early for demo mode
+      }
+      
+      // Re-authenticate user before updating password
+      const credential = EmailAuthProvider.credential(user.email!, currentPassword);
+      await reauthenticateWithCredential(user, credential);
+      
+      // Update password
+      await firebaseUpdatePassword(user, newPassword);
+    } catch (error) {
+      const authError = error as AuthError;
+      setError(getErrorMessage(authError.code));
+      throw error;
+    }
+  };
+
   const clearError = () => {
     setError(null);
   };
@@ -96,6 +202,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     signUp,
     signIn,
     logout,
+    updateProfile,
+    updatePassword,
     error,
     clearError,
   };

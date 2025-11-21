@@ -7,6 +7,11 @@ import path from 'path';
 // Import route handlers
 import programsRouter from './routes/programs';
 import coursesRouter from './routes/courses';
+import scraperRouter from './routes/scraper';
+import plansRouter from './routes/plans';
+
+// Import database
+import { testConnection } from './config/database';
 
 // Load environment variables
 dotenv.config();
@@ -26,6 +31,8 @@ app.use(express.urlencoded({ extended: true }));
 // API Routes
 app.use('/api/programs', programsRouter);
 app.use('/api/courses', coursesRouter);
+app.use('/api/scraper', scraperRouter);
+app.use('/api/plans', plansRouter);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
@@ -53,11 +60,29 @@ app.use('*', (req, res) => {
   });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🚀 CoursePath Backend Server running on port ${PORT}`);
-  console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
-});
+// Initialize database connection and start server
+async function startServer() {
+  try {
+    // Test database connection (optional - app works with JSON files)
+    const dbConnected = await testConnection();
+    
+    // Start server
+    app.listen(PORT, () => {
+      console.log(`🚀 CoursePath Backend Server running on port ${PORT}`);
+      console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
+      console.log(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
+      if (dbConnected) {
+        console.log(`🗄️  Database: PostgreSQL connected`);
+      } else {
+        console.log(`⚠️  Database: Not connected (using JSON files)`);
+      }
+    });
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
+}
+
+startServer();
 
 export default app;
